@@ -1,10 +1,21 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 
+
+
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
+            <div >
+        <Image
+          className={styles.full_page_img}
+          src="/pixasquare-4ojhpgKpS68-unsplash.jpg"
+          alt="Splash image placeholder"
+          width={1000}
+          height={1000}
+          priority
+        />
+      
+      {/* <div className={styles.description}>
         <p>
           Get started by editing&nbsp;
           <code className={styles.code}>src/app/page.tsx</code>
@@ -85,11 +96,9 @@ export default function Home() {
           <h2>
             Deploy <span>-&gt;</span>
           </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
+
         </a>
+      </div> */}
       </div>
-    </main>
   );
 }

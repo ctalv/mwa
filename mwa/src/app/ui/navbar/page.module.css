@@ -1,0 +1,33 @@
+.navcontainer {
+    color: black;
+    position: fixed;
+    margin: 10px;
+}
+
+.navbar {
+    color: black;
+    display: flex;
+    top: 0;
+    position: sticky;
+    z-index: 0;
+}
+
+.brand {
+    background-color: red;
+    width: 20px;
+    height: 20px;
+}
+
+.navmenu {
+    display: inline;
+}
+
+.navlist {
+    display: flex;
+    list-style-type: none;
+    margin-left: 5px;
+}
+
+.navitem {
+    margin: 2px;
+}

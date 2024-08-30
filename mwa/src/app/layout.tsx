@@ -14,11 +14,11 @@ export const metadata: Metadata = {
 export default function Layout({ children }) {
   return (
     <html lang="en">
-    <body>
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
+      <body>
+          <Navbar />
+          <main>{children}</main>
+          <Footer />
       </body>
-      </html>
+    </html>
   );
 }
