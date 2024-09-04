@@ -5,7 +5,7 @@ import styles from "./page.module.css";
 
 export default function Home() {
   return (
-            <div >
+            <div>
         <Image
           className={styles.full_page_img}
           src="/pixasquare-4ojhpgKpS68-unsplash.jpg"
@@ -14,7 +14,12 @@ export default function Home() {
           height={1000}
           priority
         />
-      
+        <div className={styles.description}>
+      <p>
+        This is where you can write everything about how cool you are. 
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      </div>
       {/* <div className={styles.description}>
         <p>
           Get started by editing&nbsp;

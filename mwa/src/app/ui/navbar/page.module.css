@@ -1,7 +1,8 @@
 .navcontainer {
     color: black;
+    background-color: #EEE7DF;
     position: fixed;
-    margin: 10px;
+    padding: 10px;
 }
 
 .navbar {
@@ -10,12 +11,12 @@
     top: 0;
     position: sticky;
     z-index: 0;
+    align-items: center;
 }
 
-.brand {
-    background-color: red;
-    width: 20px;
-    height: 20px;
+.navlogo {
+    width: 40px;
+    height: 40px;
 }
 
 .navmenu {
