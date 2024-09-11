@@ -1,0 +1,17 @@
+.about {
+    padding: 0 .75rem;
+    padding-top: 10px;
+}
+
+.headshot {
+    height: 500px;
+    width:fit-content;
+}
+
+.description {
+    visibility: hidden;
+}
+
+.leadership {
+    column-count: 2;
+}
