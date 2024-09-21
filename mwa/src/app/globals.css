@@ -107,7 +107,6 @@ body {
   --forest: #2e2c1b;
   --forest-dark: #201f0c;
 
-
   --bar-width: 60px;
   --bar-height: 8px;
   --hamburger-gap: 6px;
@@ -136,4 +135,18 @@ main {
 
 .webpadding {
   padding: 0 .75rem;
+}
+
+@media only screen and (min-width: 1000px) {
+  .content {
+    margin: 0 auto;
+    padding: 0 .75rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .content {
+    margin: 0 auto;
+    max-width: 1450px
+  }
 }

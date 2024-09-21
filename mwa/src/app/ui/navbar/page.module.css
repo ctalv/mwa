@@ -3,7 +3,7 @@
     display: flex;
     top: 0;
     position: sticky;
-    z-index: 0;
+    /* z-index: 0; */
     align-items: center;
     width: 100%;
 }
@@ -11,11 +11,13 @@
 .navcontainer {
     display: flex;
     justify-content: space-between;
+
     color: black;
     background-color: var(--saddle15);
     position: fixed;
+    z-index: 10;
     /* margin: 10px; */
-    max-height: 60px;
+    max-height: 70px;
     width: 100%;
 }
 
@@ -25,34 +27,16 @@
 }
 
 .navlogo, .hamburger {
-    z-index: 2;
+    margin: 5px 10px;
+    align-items: center;
+    justify-content: center;
+    z-index: 11;
 }
 
-/* 
-.navlist {
-    list-style-type: none;
-    margin-left: 5px;
-} */
-/* 
 .navitem {
-    margin: 2px;
-} */
-
-
-
-/* #navtoggle {
-    display: block;
-    position: relative;
-    top: 50px;
-    left: 50px;
-
-    z-index: 1;
-
-    -webkit-user-select: none;
-    user-select: none;
-} */
-
-
+    font-size: 50px;
+    list-style: none;
+}
 
 
 
@@ -67,9 +51,6 @@
     width: max-content;
     position: relative;
     float: right;
-    /* top: 0; */
-    /* left: 100px; */
-    z-index: 2;
     cursor: pointer;
 }
 
@@ -91,7 +72,7 @@
     content: "";
     width: var(--bar-width);
     height: var(--bar-height);
-    background-color: var(--saddle15);
+    background-color: var(--saddle);
     border-radius: 9999px;
     transform-origin: left center;
     transition: opacity var(--animation-timing), width var(--animation-timing),
@@ -136,6 +117,9 @@
     color: var(--saddle);
     min-width: 100vw;
     min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hamburger:has(input:checked)+.navlist {
