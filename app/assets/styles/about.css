@@ -16,59 +16,7 @@
     object-fit: cover;
 }
 
-.profile {
-    /* display: flex; */
-    /* position: relative; */
 
-}
-
-.profile h3,
-.profile h4 {
-    /* position: absolute; */
-    /* width: 100%; */
-}
-
-.profile Image, .description {
-    /* width: 100%; */
-    /* height: 100%; */
-    /* position: relative; */
-
-/* line-height: 9px;   */
-
-    /* display: inline-block; */
-
-}
-
-.description {
-    /* height: 100%; */
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* height: 500px; */
-    /* width: 300px; */
-    /* margin: 0 10px; */
-    /* transform: translate(-50%, -50%); */
-    /* display: inline-block; */
-
-    /* display: none; */
-    /* position: relative; */
-    /* z-index: 1; */
-    /* visibility:hidden; */
-}
-
-.profile:hover
-.description {
-    
-    /* display: inline-block; */
-    /* visibility: visible; */
-
-}
-
-
-
-.team {
-
-}
 
 
 
