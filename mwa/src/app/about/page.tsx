@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import { Button, Col, Container, Row } from "react-bootstrap";
 
+
 export default function Page() {
   return (
     <div className={styles.about}>
@@ -12,12 +13,11 @@ export default function Page() {
       </div>
       <div className={styles.people}>
       <h2>Leadership</h2>
-        <div className={styles.leadership}>
-          <div className={styles.profile}>
-            
+        <div className={["row", styles.leadership].join(" ")}>
+          <div className={["col", styles.profile].join(" ")}>
             <h3>Matthew Mitchell</h3>
             <h4>Owner and Founding Principal</h4>
-            <div className={col}>
+            <div >
             <Image
               className={styles.headshot}
               src="/matthew.jpg"
@@ -34,7 +34,7 @@ export default function Page() {
             </div>
             </div>
           </div>
-          <div className={styles.profile}>
+          <div className={["col", styles.profile].join(" ")}>
           <div>
             <h3>Austin Wilson</h3>
             <h4>Associate Principal</h4>
