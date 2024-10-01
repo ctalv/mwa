@@ -1,0 +1,130 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+
+    color: black;
+    background-color: var(--saddle15);
+    position: fixed;
+    z-index: 10;
+    /* margin: 10px; */
+    max-height: 70px;
+    width: 100%;
+}
+
+.navbar {
+    color: black;
+    display: flex;
+    top: 0;
+    position: sticky;
+    /* z-index: 0; */
+    align-items: center;
+    width: 100%;
+}
+
+
+
+.navlogo {
+    width: 50px;
+    height: 50px;
+    margin: 5px 5px;
+}
+
+.navlogo,
+.hamburger {
+    margin: 5px 10px;
+
+    align-items: center;
+    justify-content: center;
+    z-index: 11;
+}
+
+.navitem {
+    font-size: 50px;
+    list-style: none;
+    
+}
+
+
+
+.hamburger {
+    --x-width: 50px;
+    /* --x-width: calc(10px); */
+
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--hamburger-gap);
+    width: max-content;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+
+.hamburger:has(input:checked) {
+    --foreground: var(--saddle15);
+    --background: var(--saddle);
+}
+
+.hamburger:has(input:focus-visible)::before,
+.hamburger:has(input:focus-visible)::after,
+.hamburger input:focus-visible {
+    border: 1px solid var(--saddle);
+    box-shadow: 0 0 0 1px var(--saddle15);
+}
+
+.hamburger::before,
+.hamburger::after,
+.hamburger input {
+    content: "";
+    width: var(--bar-width);
+    height: var(--bar-height);
+    background-color: var(--saddle);
+    border-radius: 9999px;
+    transform-origin: left center;
+    transition: opacity var(--animation-timing), width var(--animation-timing),
+        rotate var(--animation-timing), translate var(--animation-timing),
+        background-color var(--animation-timing);
+}
+
+.hamburger input {
+    appearance: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    pointer-events: none;
+}
+
+.hamburger:has(input:checked)::before {
+    rotate: 45deg;
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-height) / -2);
+}
+
+.hamburger:has(input:checked)::after {
+    rotate: -45deg;
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-height) / 2);
+}
+
+.hamburger input:checked {
+    opacity: 0;
+    width: 0;
+}
+
+.navlist {
+    transition: translate var(--animation-timing);
+    translate: 0 -100%;
+    position: absolute;
+    display: grid;
+    align-items: center;
+    background-color: var(--saddle15);
+    color: var(--saddle);
+    min-width: 100vw;
+    min-height: 100vh;
+
+}
+
+.hamburger:has(input:checked)+.navlist {
+    translate: 0 0;
+}
+
