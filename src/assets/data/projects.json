@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "title": "Rice Blvd",
+        "mainImage": "src/assets/images/projects/RachelAlysePhotographyTheOwenGroupChristmas-2.jpg",
+        "mainAlt": "",
+        "galleryImages": {
+
+        },
+        "description" : "This is where you will do a description of your project."
+    },
+    {
+        "name": "Rice Village",
+        "mainImage": "photoRiceVillage"
+    },
+    {
+        "name": "Rice Village",
+        "mainImage": "photoRiceVillage"
+    },
+    {
+        "name": "Rice Village",
+        "mainImage": "photoRiceVillage"
+    },
+    {
+        "name": "Rice Village",
+        "mainImage": "photoRiceVillage"
+    }
+
+]

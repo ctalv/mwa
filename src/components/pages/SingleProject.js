@@ -1,24 +1,23 @@
 import React from "react";
-import { Link } from 'react-router-dom'
 import "../../assets/styles/projects.css";
-// import photoRiceVillage from "../../assets/images/projects/RachelAlysePhotographyTheOwenGroupChristmas-2.jpg"
-import projectList from "../../assets/data/projects";
+import photoRiceVillage from "../../assets/images/projects/RachelAlysePhotographyTheOwenGroupChristmas-2.jpg"
 
-function Projects(projectList) {
-    console.log(projectList)
+
+function SingleProject() {
+
 
     return (
         <div class="projects">
             <h2 class="text-center">Projects</h2>
             <div class="container">
                 <div class="gallery text-center row">
-                    {projectList.map(item => (
+                    {projects.map(item => (
                         <div class="project col">
-                            <Link to={`/project/${item.title}`}>
+                            <a href="">
                                 <img class="project-photo col" src={item.mainImage}
                                     alt="Splash image placeholder" />
-                                <h3>{item.title}</h3>
-                            </Link>
+                                <h3>{item.name}</h3>
+                            </a>
                         </div>
 
                     ))}
@@ -28,4 +27,4 @@ function Projects(projectList) {
     );
 }
 
-export default Projects;
+export default SingleProject;
