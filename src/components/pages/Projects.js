@@ -1,8 +1,8 @@
-import React from "react";
-import { Link } from 'react-router-dom'
+import * as React from "react";
+import { Link } from "react-router-dom";
 import "../../assets/styles/projects.css";
 // import photoRiceVillage from "../../assets/images/projects/RachelAlysePhotographyTheOwenGroupChristmas-2.jpg"
-import projectList from "../../assets/data/projects";
+import "../../assets/data/projects"
 
 function Projects(projectList) {
     console.log(projectList)
