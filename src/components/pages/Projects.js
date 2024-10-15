@@ -1,33 +1,34 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
-import "../../assets/styles/projects.css";
+import projectList from "../../assets/data/projects";
+import "../../assets/styles/projects.css"
 // import photoRiceVillage from "../../assets/images/projects/RachelAlysePhotographyTheOwenGroupChristmas-2.jpg"
 // import "../../assets/data/projects"
-import riceBlvdMain from "../../assets/images/projects/Rice_Blvd/RachelAlysePhotographyTheOwenGroupChristmas-2.jpg"
-import riceBlvd1 from "../../assets/images/projects/Rice_Blvd/RachelAlysePhotographyTheOwenGroupChristmas-22.jpg"
-import riceBlvd2 from "../../assets/images/projects/Rice_Blvd/RachelAlysePhotographyTheOwenGroupChristmas-33.jpg"
-import riceBlvd3 from "../../assets/images/projects/Rice_Blvd/RachelAlysePhotographyTheOwenGroupChristmas-35.jpg"
+// import riceBlvdMain from "../../assets/images/projects/Rice_Blvd/RachelAlysePhotographyTheOwenGroupChristmas-2.jpg"
+// import riceBlvd1 from "../../assets/images/projects/Rice_Blvd/RachelAlysePhotographyTheOwenGroupChristmas-22.jpg"
+// import riceBlvd2 from "../../assets/images/projects/Rice_Blvd/RachelAlysePhotographyTheOwenGroupChristmas-33.jpg"
+// import riceBlvd3 from "../../assets/images/projects/Rice_Blvd/RachelAlysePhotographyTheOwenGroupChristmas-35.jpg"
 
 // const NAMEImages = importAll(require.context('../images/projects/DIRECTORY', false, '/\.jpg/'));
 // const riceBlvdImages = importAll(require.context('../images/projects/Rice_Blvd', false, '/\.jpg$/'));
 
 
-const projectList = [
-    {
-        title: "Rice Blvd",
-        mainImage: riceBlvdMain,
-        mainAlt: "Rice Boulevard main image.",
-        galleryImages: [riceBlvd1, riceBlvd2, riceBlvd3],
-        description : "This is where you will do a description of your project. Rice Blvd"
-    },
-    {
-        title: "Rice Blvd 2",
-        mainImage: riceBlvdMain,
-        mainAlt: "Rice Boulevard main image.",
-        galleryImages: [riceBlvd1, riceBlvd2, riceBlvd3],
-        description : "This is where you will do a description of your project. Rice Blvd"
-    },
-]
+// const projectList = [
+//     {
+//         title: "Rice Blvd",
+//         mainImage: riceBlvdMain,
+//         mainAlt: "Rice Boulevard main image.",
+//         galleryImages: [riceBlvd1, riceBlvd2, riceBlvd3],
+//         description : "This is where you will do a description of your project. Rice Blvd"
+//     },
+//     {
+//         title: "Rice Blvd 2",
+//         mainImage: riceBlvdMain,
+//         mainAlt: "Rice Boulevard main image.",
+//         galleryImages: [riceBlvd1, riceBlvd2, riceBlvd3],
+//         description : "This is where you will do a description of your project. Rice Blvd"
+//     },
+// ]
 
 function Projects() {
     
