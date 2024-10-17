@@ -31,8 +31,6 @@ import "../../assets/styles/projects.css"
 // ]
 
 function Projects() {
-    
-    
 
     return (
         <div class="projects">
