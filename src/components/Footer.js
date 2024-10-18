@@ -7,20 +7,20 @@ import linkedin from "../assets/images/LI-In-Bug.png"
 function Footer() {
     return (
         <footer>
-        <div class="footertop">
-          <div class="footerlogodiv">
-            <a href="/"><img class="footerlogo" src={mainLogo} alt="Mitchell Wilson Main Logo"
+        <div className="footertop">
+          <div className="footerlogodiv">
+            <a href="/"><img className="footerlogo" src={mainLogo} alt="Mitchell Wilson Main Logo"
                 priority />
             </a>
           </div>
-          <div class="socials">
+          <div className="socials">
             <a href="https://www.instagram.com/matthewmitchellarchitecture/">
-              <img class="socialslogo" src={instagram} alt="Instagram" priority /></a>
+              <img className="socialslogo" src={instagram} alt="Instagram" priority /></a>
             <a href="https://www.linkedin.com/company/matthew-mitchell-architecture/">
-              <img class="socialslogo" src={linkedin} alt="LinkedIn" priority /></a>
+              <img className="socialslogo" src={linkedin} alt="LinkedIn" priority /></a>
           </div>
         </div>
-        <div class="footerbottom">
+        <div className="footerbottom">
           Website by Claire Alverson
         </div>
       </footer>

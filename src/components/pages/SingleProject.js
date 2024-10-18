@@ -6,23 +6,26 @@ import projectList from "../../assets/data/projects";
 
 function SingleProject() {
 
-    // const { title } = useParams();
+    const { title } = useParams();
+    const project = projectList.find(item => item.title === title)
 
     return (
-        <div class="projects">
-            <h2 class="text-center">Projects</h2>
-            <div class="container">
-                <div class="gallery text-center row">
-                    <div class="project col">
+        <main>
+        <div className="projects">
+            <h2 className="text-center">Projects</h2>
+            <div className="container">
+                <div className="gallery text-center row">
+                    <div className="project col">
                         <a href="">
-                            <img class="project-photo col" src={projectList[0].mainImage}
-                                alt={projectList[0].mainAlt} />
-                            <h3>{projectList[0].title}</h3>
+                            <img className="project-photo col" src={project.mainImage}
+                                alt={project.mainAlt} />
+                            <h3>{project.title}</h3>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
+        </main>
     );
 }
 

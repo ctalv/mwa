@@ -5,9 +5,10 @@ import homeimage from "../../assets/images/pixasquare-4ojhpgKpS68-unsplash.jpg"
 
 function Home() {
     return (
+        <main>
         <div className="homepage">
-            <img class="full_page_img" src={homeimage} alt="Splash image placeholder" />
-            <div class="description container my-5">
+            <img className="full_page_img" src={homeimage} alt="Splash image placeholder" />
+            <div className="description container my-5">
                 <p>
                     This is where you can write everything about how cool you are.
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -18,6 +19,7 @@ function Home() {
                 </p>
             </div>
         </div>
+        </main>
     )
 }
 

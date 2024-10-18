@@ -10,9 +10,10 @@ import picWarren from "../../assets/images/Warren.jpg";
 
 function About() {
     return (
-        <div class="about">
-            <h2 class="text-center">ABOUT US</h2>
-            <div class="general container">
+        <main>
+        <div className="about">
+            <h2 className="text-center">ABOUT US</h2>
+            <div className="general container">
                 <p>
                     Need some values, the kind of work you do, maybe a few pictures. Note to self: we can also do like a gallery
                     transition thing on the homepages and maybe here too? Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -22,14 +23,14 @@ function About() {
                     cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
             </div>
-            <div class="people">
-                <h2 class="text-center">Leadership</h2>
-                <div class="leadership container text-center">
-                    <div class="profile row">
+            <div className="people">
+                <h2 className="text-center">Leadership</h2>
+                <div className="leadership container text-center">
+                    <div className="profile row">
                         <h3>Matthew Mitchell</h3>
                         <h4>Owner and Founding Principal</h4>
-                        <img class="headshot col" src={picMatthew} alt="Splash image placeholder" />
-                        <p class="description col">
+                        <img className="headshot col" src={picMatthew} alt="Splash image placeholder" />
+                        <p className="description col">
                             Matthew Mitchell started his collegiate path in civil engineering close to his hometown of
                             Fayetteville, NC and learned quickly that his true interest was designing projects. At the time,
                             he had family living in Texas and the architecture program at University of Houston became the
@@ -42,10 +43,10 @@ function About() {
                             and a proud Father and Husband.
                         </p>
                     </div>
-                    <div class="profile row">
+                    <div className="profile row">
                         <h3>Austin Wilson</h3>
                         <h4>Associate Principal</h4>
-                        <p class="description col">
+                        <p className="description col">
                             Austin Wilson is Associate Principal at Matthew Mitchell Architecture. He graduated with a Masters
                             in
                             Architecture with a Professional Degree in Urban and Community Studies in 2011 from Texas Tech
@@ -70,20 +71,20 @@ function About() {
                             family of five, traveling, golfing, and enjoying the outdoors.
                         </p>
 
-                        <img class="headshot col" src={picAustin} alt="Splash image placeholder" />
+                        <img className="headshot col" src={picAustin} alt="Splash image placeholder" />
                     </div>
                 </div>
-                <h2 class="text-center">Team</h2>
-                <div class="team">
+                <h2 className="text-center">Team</h2>
+                <div className="team">
                     <div>
-                        <div class="container text-center">
-                            <div class="profile row">
+                        <div className="container text-center">
+                            <div className="profile row">
                                 <h3>Warren Alverson</h3>
                                 <h4>Associate</h4>
-                                <div class="col ">
-                                    <img class="headshot" src={picWarren} alt="Splash image placeholder" />
+                                <div className="col ">
+                                    <img className="headshot" src={picWarren} alt="Splash image placeholder" />
                                 </div>
-                                <p class="description col ">
+                                <p className="description col ">
                                     Warren Alverson graduated with a Professional Bachelor’s degree in Architecture from the
                                     University of Houston, and produced an undergraduate thesis centered around design in
                                     Houston
@@ -95,10 +96,10 @@ function About() {
                                     Texas bays, and spending time with his family and friends.
                                 </p>
                             </div>
-                            <div class="profile row">
+                            <div className="profile row">
                                 <h3>Emilia Cavallaro</h3>
                                 <h4>Associate</h4>
-                                <p class="description col">
+                                <p className="description col">
                                     Emilia Cavallaro earned her Bachelor of Architecture degree at Rice University in Houston,
                                     Texas, and has experience working in residential and commercial design in Houston and New
                                     York.
@@ -107,19 +108,19 @@ function About() {
                                     curation. She and her husband enjoy traveling, cooking different cuisines, and spending time
                                     with their two cats.
                                 </p>
-                                <div class="col">
+                                <div className="col">
 
-                                    <img class="headshot" src={picEmilia} alt="Splash image placeholder" />
+                                    <img className="headshot" src={picEmilia} alt="Splash image placeholder" />
                                 </div>
                             </div>
-                            <div class="profile row">
+                            <div className="profile row">
                                 <h3>Meagan Dinh</h3>
                                 <h4>Associate</h4>
-                                <div class="col">
+                                <div className="col">
 
-                                    <img class="headshot" src={picMeagan} alt="Splash image placeholder" />
+                                    <img className="headshot" src={picMeagan} alt="Splash image placeholder" />
                                 </div>
-                                <p class="description col">
+                                <p className="description col">
                                     Meagan Dinh joined Matthew Mitchell Architecture as an intern in 2021. She received her
                                     Master’s
                                     in Land and Property Development at Texas A&M University in 2022, where she gained knowledge
@@ -132,10 +133,10 @@ function About() {
                                 </p>
                             </div>
 
-                            <div class="profile row">
+                            <div className="profile row">
                                 <h3>Elvia Melendez</h3>
                                 <h4>Associate</h4>
-                                <p class="description col">
+                                <p className="description col">
                                     Elvia Melendez joined Matthew Mitchell Architecture in 2021 as an Architectural Associate.
                                     She
                                     is a Houston native with roots to Mexico who graduated from the University of Houston in
@@ -150,18 +151,18 @@ function About() {
                                     adventure, she enjoys walking her dogs, reading books, going to concerts, catching up with
                                     friends, and being in the company of her family.
                                 </p>
-                                <div class="col">
+                                <div className="col">
 
-                                    <img class="headshot" src={picElvia} alt="Splash image placeholder" />
+                                    <img className="headshot" src={picElvia} alt="Splash image placeholder" />
                                 </div>
                             </div>
-                            {/* <div class="profile col">
+                            {/* <div className="profile col">
                                 <div>
                                     <h3>Tiffany Tetlow</h3>
                                     <h4>Virtual Assistant</h4>
-                                    <img class="headshot" src="assets/images/tiffany.jpg" alt="Splash image placeholder" />
+                                    <img className="headshot" src="assets/images/tiffany.jpg" alt="Splash image placeholder" />
                                 </div>
-                                <p class="description">
+                                <p className="description">
                                     Tiffany Tetlow is a native of North Carolina and brings a wealth of administrative experience.
                                     With 14 years of administrative expertise working with notable organizations such as Fort Bragg
                                     FCU and East Carolina University, she allows organizations to thrive as she takes care of
@@ -180,6 +181,7 @@ function About() {
                 </div>
             </div>
         </div>
+        </main>
     );
 }
 

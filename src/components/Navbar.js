@@ -13,9 +13,9 @@ function Navbar({ currentPage, handlePageChange }) {
     <nav>
       <img className="navlogo" src={logomarkSaddle} alt="Splash image placeholder" priority />
       <label className="hamburger">
-        <input class="check" type='checkbox' />
+        <input className="check" type='checkbox' />
       </label>
-      <div class="navlist">
+      <div className="navlist">
       <menu className="text-center">
         <li className="navitem">
           <Link

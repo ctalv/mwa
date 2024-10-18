@@ -33,14 +33,15 @@ import "../../assets/styles/projects.css"
 function Projects() {
 
     return (
-        <div class="projects">
-            <h2 class="text-center">Projects</h2>
-            <div class="container">
-                <div class="gallery text-center row">
+        <main>
+        <div className="projects">
+            <h2 className="text-center">Projects</h2>
+            <div className="container">
+                <div className="gallery text-center row">
                     {projectList.map(item => (
-                        <div class="project col">
+                        <div className="project col">
                             <Link to={`/project/${item.title}`}>
-                                <img class="project-photo col" src={item.mainImage}
+                                <img className="project-photo col" src={item.mainImage}
                                     alt={item.mainAlt} />
                                 <h3>{item.title}</h3>
                             </Link>
@@ -50,6 +51,7 @@ function Projects() {
                 </div>
             </div>
         </div>
+        </main>
     );
 }
 
