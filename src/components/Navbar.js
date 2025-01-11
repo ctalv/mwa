@@ -1,6 +1,7 @@
 import React from "react";
 import "../assets/styles/navbar.css";
-import logomarkSaddle from "../assets/images/MWA-logomark-saddle.png"
+import logomarkSaddle from "../assets/images/MWA-logomark-saddle.png";
+import logomarkMain from "../assets/images/MWA-main-logo-saddle.png";
 import { Link } from "react-router-dom";
 
 function Navbar({ currentPage, handlePageChange }) {
@@ -11,7 +12,7 @@ function Navbar({ currentPage, handlePageChange }) {
   }
   return (
     <nav>
-      <img className="navlogo" src={logomarkSaddle} alt="Splash image placeholder" priority />
+      <img className="navlogo" src={logomarkMain} alt="Splash image placeholder" priority />
       <label className="hamburger">
         <input className="check" type='checkbox' />
       </label>
