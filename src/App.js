@@ -11,6 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "./assets/styles/globals.css"
 
 import './index.css';
+import Footer from "./components/Footer";
 
 function App () {
     return (
@@ -23,6 +24,7 @@ function App () {
                 <Route path="/projects" element={<Projects />} />
                 <Route path="/project/:title" element={<SingleProject />} />
             </Routes>
+            <Footer/>
         </div>
     );
 

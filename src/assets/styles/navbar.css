@@ -46,28 +46,31 @@ nav {
     align-items: center;
     padding: 10px;
     position: relative;
-    background-color: var(--saddle15); /* Customize as needed */
-  }
-  
-  /* Centering the navlogo */
-  .navlogo {
+    background-color: var(--saddle15);
+    /* Customize as needed */
+}
+
+/* Centering the navlogo */
+.navlogo {
     margin: 0 auto;
-    max-width: 150px; /* Adjust the size of the logo */
-  }
-  
-  /* Styling for the hamburger menu */
-  .hamburger {
+    max-width: 150px;
+    /* Adjust the size of the logo */
+}
+
+/* Styling for the hamburger menu */
+.hamburger {
     display: none;
     position: absolute;
-    right: 10px; /* Move hamburger to the far right */
+    right: 10px;
+    /* Move hamburger to the far right */
     z-index: 11;
 
-  }
+}
 
 .navitem {
     font-size: 50px;
     list-style: none;
-    
+
 }
 
 
@@ -141,7 +144,7 @@ nav {
     transition: translate var(--animation-timing);
     translate: 0 -100%;
     position: absolute;
-    
+
     display: grid;
     align-items: center;
     background-color: var(--saddle15);
@@ -157,4 +160,3 @@ nav {
 .hamburger:has(input:checked)+.navlist {
     translate: 0 0;
 }
-

@@ -1,11 +1,16 @@
 import React from "react";
+// import { Button, Alert } from "react-native";
 import "../../assets/styles/homepage.css";
 import homeImage from "../../assets/images/pixasquare-4ojhpgKpS68-unsplash.jpg";
 import Carousel from "react-multi-carousel";
 import 'react-multi-carousel/lib/styles.css';
+import images from "../../assets/data/images.json"
 
 
 function Home() {
+
+    let itemList = images
+
 
     const responsive = {
         superLargeDesktop: {
@@ -15,11 +20,11 @@ function Home() {
         },
         desktop: {
           breakpoint: { max: 3000, min: 1024 },
-          items: 3
+          items: 1
         },
         tablet: {
           breakpoint: { max: 1024, min: 464 },
-          items: 2
+          items: 1
         },
         mobile: {
           breakpoint: { max: 464, min: 0 },
@@ -28,7 +33,6 @@ function Home() {
       };
 
     return (
-        <main>
         <div className="homepage">
             <img className="full_page_img" src={homeImage} alt="Splash image placeholder" />
             <div className="description container my-5">
@@ -41,16 +45,18 @@ function Home() {
                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
             </div>
-            <div className="description container my-5">
-            <Carousel responsive={responsive}>
-                <div>Item 1</div>
-                <div>Item 2</div>
-                <div>Item 3</div>
-                <div>Item 4</div>
-            </Carousel>
+            <div className="container my-5 carousels">
+                {/* <Button
+                    title="Press me"
+                    onPress={() => Alert.alert('Simple Button pressed')}
+                /> */}
+                <Carousel className="tag" responsive={responsive}>
+                    {itemList.map(item => (
+                        <div>{item.title}</div>
+                    ))}
+                </Carousel>
             </div>
         </div>
-        </main>
     )
 }
 

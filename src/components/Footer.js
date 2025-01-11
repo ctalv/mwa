@@ -7,7 +7,7 @@ import linkedin from "../assets/images/LI-In-Bug.png"
 function Footer() {
     return (
         <footer>
-        <div className="footertop">
+        <div className="footerleft">
           <div className="footerlogodiv">
             <a href="/"><img className="footerlogo" src={mainLogo} alt="Mitchell Wilson Main Logo"
                 priority />
@@ -20,9 +20,13 @@ function Footer() {
               <img className="socialslogo" src={linkedin} alt="LinkedIn" priority /></a>
           </div>
         </div>
+        <div class="iframecontainer">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8281.371658381942!2d-95.45406552380794!3d29.74572697507535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c14ed5683427%3A0xe3af08e150acc879!2sMatthew%20Mitchell%20Architecture!5e1!3m2!1sen!2sus!4v1736561779216!5m2!1sen!2sus"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
         <div className="footerbottom">
           Website by Claire Alverson
         </div>
+
       </footer>
     );
 }
