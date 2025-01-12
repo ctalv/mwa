@@ -5,9 +5,9 @@ import riceBlvd35 from "../images/projects/Rice_Blvd/RachelAlysePhotographyTheOw
 
 const projectList = [
     {
-        title: "Rice Village",
-        mainImage: riceBlvd2,
-        mainAlt: "Rice Boulevard main image.",
+        project: "Rice Village",
+        image: riceBlvd2,
+        alt: "Rice Boulevard main image.",
         description: "This is where you will do a description of your project. Rice Blvd"
     }
 ]

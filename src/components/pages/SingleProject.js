@@ -12,7 +12,7 @@ function SingleProject() {
     return (
         <main>
         <div className="projects">
-            <h2 className="text-center">Projects</h2>
+            <h2 className="text-center">PROJECTS</h2>
             <div className="container">
                 <div className="gallery text-center row">
                     <div className="project col">

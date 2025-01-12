@@ -9,8 +9,6 @@ import 'react-multi-carousel/lib/styles.css';
 
 function Home() {
 
-
-
     const responsive = {
         superLargeDesktop: {
             // the naming can be any, depends on you.
@@ -48,7 +46,8 @@ function Home() {
                 <Carousel className="tag" responsive={responsive}> 
                     {itemLists.images.map(item => (
                         <div>{item.project}
-                            <img src={item.image} alt=""/>
+
+                            <img className="home-photo" src={item.image} alt=""/>
                         </div>
                     ))} 
                 </Carousel>
