@@ -1,41 +1,39 @@
 import React from "react";
 // import { Button, Alert } from "react-native";
 import "../../assets/styles/homepage.css";
+import itemLists from "../../assets/data/index";
 import homeImage from "../../assets/images/pixasquare-4ojhpgKpS68-unsplash.jpg";
-import testImage from "../../assets/images/projects/Rice_Blvd/RachelAlysePhotographyTheOwenGroupChristmas-22.jpg"
 import Carousel from "react-multi-carousel";
 import 'react-multi-carousel/lib/styles.css';
-import images from "../../assets/data/images.json"
 
 
 function Home() {
 
-    let itemList = images
 
 
     const responsive = {
         superLargeDesktop: {
-          // the naming can be any, depends on you.
-          breakpoint: { max: 4000, min: 3000 },
-          items: 5
+            // the naming can be any, depends on you.
+            breakpoint: { max: 4000, min: 3000 },
+            items: 5
         },
         desktop: {
-          breakpoint: { max: 3000, min: 1024 },
-          items: 1
+            breakpoint: { max: 3000, min: 1024 },
+            items: 1
         },
         tablet: {
-          breakpoint: { max: 1024, min: 464 },
-          items: 1
+            breakpoint: { max: 1024, min: 464 },
+            items: 1
         },
         mobile: {
-          breakpoint: { max: 464, min: 0 },
-          items: 1
+            breakpoint: { max: 464, min: 0 },
+            items: 1
         }
-      };
+    };
 
     return (
         <div className="homepage">
-            <img className="full_page_img" src={testImage} alt="Splash image placeholder" />
+            <img className="full_page_img" src={homeImage} alt="Splash image placeholder" />
             <div className="description container my-5">
                 <p>
                     This is where you can write everything about how cool you are.
@@ -47,19 +45,12 @@ function Home() {
                 </p>
             </div>
             <div className="container my-5 carousels">
-                {/* <Button
-                    title="Press me"
-                    onPress={() => Alert.alert('Simple Button pressed')}
-                /> */}
-
-                <Carousel className="tag" responsive={responsive}>
-                    {itemList.map(item => (
+                <Carousel className="tag" responsive={responsive}> 
+                    {itemLists.images.map(item => (
                         <div>{item.project}
-                            <img src={item.image} style={{backgroundSize: 'cover', 
-        backgroundPosition: 'center', 
-        height: '400px' }}   alt="" />
+                            <img src={item.image} alt=""/>
                         </div>
-                    ))}
+                    ))} 
                 </Carousel>
             </div>
         </div>
