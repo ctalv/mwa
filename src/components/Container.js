@@ -40,7 +40,7 @@ export default function Container() {
       <main>
       {renderPage()}
       </main>
-      <Footer />
+      <Footer currentPage={currentPage} handlePageChange={handlePageChange} />
     </div>
   );
 }

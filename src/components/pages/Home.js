@@ -2,6 +2,7 @@ import React from "react";
 // import { Button, Alert } from "react-native";
 import "../../assets/styles/homepage.css";
 import homeImage from "../../assets/images/pixasquare-4ojhpgKpS68-unsplash.jpg";
+import testImage from "../../assets/images/projects/Rice_Blvd/RachelAlysePhotographyTheOwenGroupChristmas-22.jpg"
 import Carousel from "react-multi-carousel";
 import 'react-multi-carousel/lib/styles.css';
 import images from "../../assets/data/images.json"
@@ -34,7 +35,7 @@ function Home() {
 
     return (
         <div className="homepage">
-            <img className="full_page_img" src={homeImage} alt="Splash image placeholder" />
+            <img className="full_page_img" src={testImage} alt="Splash image placeholder" />
             <div className="description container my-5">
                 <p>
                     This is where you can write everything about how cool you are.
@@ -50,9 +51,14 @@ function Home() {
                     title="Press me"
                     onPress={() => Alert.alert('Simple Button pressed')}
                 /> */}
+
                 <Carousel className="tag" responsive={responsive}>
                     {itemList.map(item => (
-                        <div>{item.title}</div>
+                        <div>{item.project}
+                            <img src={item.image} style={{backgroundSize: 'cover', 
+        backgroundPosition: 'center', 
+        height: '400px' }}   alt="" />
+                        </div>
                     ))}
                 </Carousel>
             </div>
