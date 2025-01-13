@@ -1,15 +1,18 @@
 import React, { useState } from "react";
-// import { Button, Alert } from "react-native";
 import "../../assets/styles/homepage.css";
+import { Link } from "react-router-dom";
+
 import itemLists from "../../assets/data/index";
 import homeImage from "../../assets/images/pixasquare-4ojhpgKpS68-unsplash.jpg";
 import Carousel from "react-multi-carousel";
 import 'react-multi-carousel/lib/styles.css';
+import script from "../../assets/scripts/base"
 
 
 function Home() {
     const [selectedTag, setSelectedTag] = useState(0);
     console.log(selectedTag)
+    const htmlTag = itemLists.tags.find((item) => item.id === selectedTag)
     const filteredImages = itemLists.images.filter(item => item.tag === selectedTag);
 
     const handleTagClick = (tag) => {
@@ -55,25 +58,29 @@ function Home() {
                     <div>
                         <button
                             value={item.id}
-                            className={`btn ${selectedTag === item.id ? 'selected' : ''}`}
+                            className={`myButton ${selectedTag === item.id ? 'selected' : ''}`}
                             onClick={() => handleTagClick(item.id)}
                             style={{
-                                margin: '5px',
-                                padding: '10px',
-                                backgroundColor: selectedTag === item ? '#007BFF' : '#ccc',
-                                color: 'white',
-                                border: 'none',
-                                borderRadius: '4px',
+                                backgroundColor: selectedTag === item.id ? '#007BFF' : '#ccc',
                             }}
                         >{item.tag}</button>
                     </div>
                 ))}
                 </div>
+
                 {filteredImages.map((item, index) => (
-                        <div key={index}>{item.project}
-                            <img className="home-photo" src={item.image} alt="" />
+                        <div  key={index}>
+                            <Link to={`/project/${item.project}`}>
+                                <img className="home-photo" src={item.image} alt="" />
+                            </Link>
                         </div>
                     ))}
+                        <button className="myButton">
+                            <Link to={`/projects/${selectedTag}`}>
+                                Go to more {htmlTag.tag}
+                            </Link>
+                        </button>
+
                 <Carousel className="tag" responsive={responsive}>
                     {filteredImages.map((item, index) => (
                         <div key={index}>{item.project}
@@ -85,7 +92,10 @@ function Home() {
                     </div>
                 </Carousel>
             </div>
+        <script src={script}/>
+
         </div>
+
     )
 }
 

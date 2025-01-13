@@ -12,7 +12,9 @@ function Navbar({ currentPage, handlePageChange }) {
   }
   return (
     <nav>
+      <Link className="navlogo" to="/">
       <img className="navlogo" src={logomarkMain} alt="Splash image placeholder" priority />
+      </Link>
       <label className="hamburger">
         <input className="check" type='checkbox' />
       </label>

@@ -170,4 +170,12 @@ a {
 
 }
 
+.myButton {
+  margin: 5px;
+  padding: 10px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  background-color: #ccc;
+}
 

@@ -3,12 +3,12 @@ footer {
   padding-bottom: 50px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   position:relative;
 }
 
 .footerleft {
-  flex: 1; 
+  /* flex: 1;  */
   display: inline;
   padding: 0 .75rem;
 
