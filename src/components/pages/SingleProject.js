@@ -19,7 +19,7 @@ function SingleProject() {
             <div className="container">
                 <div className="gallery text-center row">
                     {images.map(item => (
-                    <div className="project col">
+                    <div className="project col space">
                         <img src={item.image} alt={item.alt}/>
                     </div>
                 ))}
