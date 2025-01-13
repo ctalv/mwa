@@ -32,24 +32,28 @@ function Projects() {
                             <div  className="tags">
                                 {itemLists.tags.map(item => (
                                     <div className="">
+                                        <Link to={`/projects/${item.id}`} >
+
                                         <button className="myButton"
                                         style={{
                                             backgroundColor: Number(tagId) === item.id ? '#0b4050' : '#2e2c1b',
                                         }}>
-                                        <Link to={`/projects/${item.id}`} >
                                             {item.tag}
-                                        </Link>
                                         </button>
+                                        </Link>
+
                                     </div>
                                     
                                 ))}
                                 <div>
+                                <Link to="/projects" >
+
                                         <button className="myButton"
                                                                     >
-                                    <Link to="/projects" >
                                         Clear
-                                    </Link>
                                     </button>
+                                    </Link>
+
                                     </div>
                             </div>
                         </div>
