@@ -44,7 +44,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    position: relative;
+    /* position: relative; */
     background-color: var(--saddle15);
     z-index: 2;
 
@@ -64,6 +64,14 @@ nav {
     right: 10px;
     /* Move hamburger to the far right */
     z-index: 11;
+    --x-width: 50px;
+    /* --x-width: calc(10px); */
+    display: flex;
+    flex-direction: column;
+    gap: var(--hamburger-gap);
+    width: max-content;
+    float: right;
+    cursor: pointer;
 
 }
 
@@ -75,19 +83,6 @@ nav {
 
 
 
-.hamburger {
-    --x-width: 50px;
-    /* --x-width: calc(10px); */
-
-
-    display: flex;
-    flex-direction: column;
-    gap: var(--hamburger-gap);
-    width: max-content;
-    position: relative;
-    float: right;
-    cursor: pointer;
-}
 
 .hamburger:has(input:checked) {
     --foreground: var(--saddle15);
