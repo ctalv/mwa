@@ -3,3 +3,8 @@
     width: 400px;
     object-fit: cover;
 }
+
+.carousels {
+    display: flex;
+    
+}

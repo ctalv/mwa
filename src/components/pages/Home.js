@@ -38,7 +38,7 @@ function Home() {
 
     return (
         <div className="homepage">
-            <img className="full_page_img" src={homeImage} alt="Splash image placeholder" />
+            <img className="full_page_img" src={homeImage} alt="Splash placeholder" />
             <div className="description container my-5">
                 <p>
                     This is where you can write everything about how cool you are.
@@ -51,7 +51,7 @@ function Home() {
             </div>
             <div className="container my-5 carousels">
                 <div>
-                {itemLists.tags.map(item => (
+                    {itemLists.tags.map(item => (
                     <div>
                         <button
                             value={item.id}
@@ -69,12 +69,20 @@ function Home() {
                     </div>
                 ))}
                 </div>
-                <Carousel className="tag" responsive={responsive}>
-                    {filteredImages.map((item, index) => (
-                        <div key={index}>
-                            <img className="home-photo" src={item.image} alt={item.alt} />
+                {filteredImages.map((item, index) => (
+                        <div key={index}>{item.project}
+                            <img className="home-photo" src={item.image} alt="" />
                         </div>
                     ))}
+                <Carousel className="tag" responsive={responsive}>
+                    {filteredImages.map((item, index) => (
+                        <div key={index}>{item.project}
+                            <img className="home-photo" src={item.image} alt="" />
+                        </div>
+                    ))}
+                    <div>
+                        Here
+                    </div>
                 </Carousel>
             </div>
         </div>
