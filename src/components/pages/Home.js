@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 // import { Button, Alert } from "react-native";
 import "../../assets/styles/homepage.css";
 import itemLists from "../../assets/data/index";
@@ -8,6 +8,13 @@ import 'react-multi-carousel/lib/styles.css';
 
 
 function Home() {
+    const [selectedTag, setSelectedTag] = useState(0);
+    console.log(selectedTag)
+    const filteredImages = itemLists.images.filter(item => item.tag === selectedTag);
+
+    const handleTagClick = (tag) => {
+        setSelectedTag(tag);
+    };
 
     const responsive = {
         superLargeDesktop: {
@@ -43,13 +50,31 @@ function Home() {
                 </p>
             </div>
             <div className="container my-5 carousels">
-                <Carousel className="tag" responsive={responsive}> 
-                    {itemLists.images.map(item => (
-                        <div>{item.project}
-
-                            <img className="home-photo" src={item.image} alt=""/>
+                <div>
+                {itemLists.tags.map(item => (
+                    <div>
+                        <button
+                            value={item.id}
+                            className={`btn ${selectedTag === item.id ? 'selected' : ''}`}
+                            onClick={() => handleTagClick(item.id)}
+                            style={{
+                                margin: '5px',
+                                padding: '10px',
+                                backgroundColor: selectedTag === item ? '#007BFF' : '#ccc',
+                                color: 'white',
+                                border: 'none',
+                                borderRadius: '4px',
+                            }}
+                        >{item.tag}</button>
+                    </div>
+                ))}
+                </div>
+                <Carousel className="tag" responsive={responsive}>
+                    {filteredImages.map((item, index) => (
+                        <div key={index}>
+                            <img className="home-photo" src={item.image} alt={item.alt} />
                         </div>
-                    ))} 
+                    ))}
                 </Carousel>
             </div>
         </div>
