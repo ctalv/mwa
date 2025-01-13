@@ -13,16 +13,18 @@ function Contact() {
             <p>
             If you would like to contact us about a project feel free to fill out the below.
             </p>
-            <form action="send_email.php"  method="post">
+            <form id="contact-form" action="send_email.php"  method="post">
                 <label for="firstname" className="form-label">First Name</label>
-                <input type="text" id="firstname" name="firstname" className="form-control"/>
+                <input type="text" id="firstname" name="firstname" className="form-control" required/>
                 <label for="lastname">Last Name</label>
-                <input type="text" id="lastname" name="lastname"className="form-control"/>
+                <input type="text" id="lastname" name="lastname"className="form-control" required/>
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" className="form-control"/>
+                <input type="email" id="email" name="email" className="form-control" required/>
+                <label for="message">Phone</label>
+                <input type="phone" id="phone" name="phone" className="form-control" required/>
                 <label for="message">Message</label>
-                <textarea id="message" name="message" placeholder="What would you like us to know?" className="form-control"></textarea>
-                <input type="submit" value="Submit" className="form-control" />
+                <textarea id="message" name="message" placeholder="What would you like us to know?" className="form-control" required></textarea>
+                <button type="submit">Submit</button>
             </form>
         </div>
         </main>
