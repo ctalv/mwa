@@ -3,3 +3,9 @@
     width: 400px;
     object-fit: cover;
 }
+
+.tags {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

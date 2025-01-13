@@ -2,6 +2,7 @@ footer {
   padding-top: 100px;
   padding-bottom: 50px;
   display: flex;
+  
   justify-content: space-between;
   /* align-items: center; */
   position:relative;
@@ -11,7 +12,8 @@ footer {
   /* flex: 1;  */
   display: inline;
   padding: 0 .75rem;
-
+  margin-left: 20px;
+  
 }
 
 /* .footerlogodiv {
@@ -31,9 +33,7 @@ footer {
   }
 
 
-.info {
-  
-}
+
 
 .infoitem {
   list-style: none;

@@ -16,7 +16,6 @@
     display: flex;
     top: 0;
     position: sticky;
-    /* z-index: 0; */
     align-items: center;
     width: 100%;
     margin: auto;
@@ -47,7 +46,8 @@ nav {
     padding: 10px;
     position: relative;
     background-color: var(--saddle15);
-    /* Customize as needed */
+    z-index: 2;
+
 }
 
 /* Centering the navlogo */

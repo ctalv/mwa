@@ -27,21 +27,30 @@ function Projects() {
 
                 <div className="container">
                     <div className="gallery text-center row">
-                        <div>
+                        <div  className="tags">
                             <h3>Show:</h3>
-                            <div className="">
+                            <div  className="tags">
                                 {itemLists.tags.map(item => (
                                     <div className="">
+                                        <button className="myButton"
+                                        style={{
+                                            backgroundColor: Number(tagId) === item.id ? '#0b4050' : '#2e2c1b',
+                                        }}>
                                         <Link to={`/projects/${item.id}`} >
                                             {item.tag}
                                         </Link>
+                                        </button>
                                     </div>
+                                    
                                 ))}
                                 <div>
+                                        <button className="myButton"
+                                                                    >
                                     <Link to="/projects" >
                                         Clear
                                     </Link>
-                                </div>
+                                    </button>
+                                    </div>
                             </div>
                         </div>
 

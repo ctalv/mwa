@@ -61,7 +61,7 @@ function Home() {
                             className={`myButton ${selectedTag === item.id ? 'selected' : ''}`}
                             onClick={() => handleTagClick(item.id)}
                             style={{
-                                backgroundColor: selectedTag === item.id ? '#007BFF' : '#ccc',
+                                backgroundColor: selectedTag === item.id ? '#0b4050' : '#2e2c1b',
                             }}
                         >{item.tag}</button>
                     </div>
