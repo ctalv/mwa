@@ -1,29 +1,32 @@
 import React from "react";
+import { useParams } from 'react-router-dom'
 import "../../assets/styles/projects.css";
-import photoRiceVillage from "../../assets/images/projects/RachelAlysePhotographyTheOwenGroupChristmas-2.jpg"
-
+// import photoRiceVillage from "../../assets/images/projects/RachelAlysePhotographyTheOwenGroupChristmas-2.jpg"
+// import projectList from "../../assets/data/projects";
+import itemLists from "../../assets/data/index";
 
 function SingleProject() {
 
+    const { title } = useParams();
+    const project = itemLists.projects.find(item => item.project === title)
+    const images = itemLists.images.filter(item => item.project === title)
 
     return (
-        <div class="projects">
-            <h2 class="text-center">Projects</h2>
-            <div class="container">
-                <div class="gallery text-center row">
-                    {/* {projects.map(item => (
-                        <div class="project col">
-                            <a href="">
-                                <img class="project-photo col" src={item.mainImage}
-                                    alt="Splash image placeholder" />
-                                <h3>{item.name}</h3>
-                            </a>
-                        </div>
-
-                    ))} */}
+        <main>
+            <div className="projects">
+                <h2 className="text-center">{project.project}</h2>
+                <p className="text-center">{project.description}</p>
+                <div className="container">
+                    <div className="gallery text-center">
+                        {images.map(item => (
+                            <div className="project row space">
+                                <img className="project-image" src={item.image} alt={item.alt} />
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
-        </div>
+        </main>
     );
 }
 

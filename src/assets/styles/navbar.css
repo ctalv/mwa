@@ -1,4 +1,4 @@
-nav {
+/* nav {
     display: flex;
     justify-content: space-between;
 
@@ -6,59 +6,83 @@ nav {
     background-color: var(--saddle15);
     position: fixed;
     z-index: 10;
-    /* margin: 10px; */
+    /* margin: 10px; 
     max-height: 70px;
     width: 100%;
-}
+} */
 
 .navbar {
     color: black;
     display: flex;
     top: 0;
     position: sticky;
-    /* z-index: 0; */
     align-items: center;
     width: 100%;
+    margin: auto;
 }
 
 
 
-.navlogo {
+/* .navlogo {
     width: 50px;
     height: 50px;
     margin: 5px 5px;
-}
+} */
 
-.navlogo,
+/* .navlogo,
 .hamburger {
     margin: 5px 10px;
 
     align-items: center;
     justify-content: center;
     z-index: 11;
+} */
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    /* position: relative; */
+    background-color: var(--saddle15);
+    z-index: 2;
+
+}
+
+/* Centering the navlogo */
+.navlogo {
+    margin: 0 auto;
+    max-width: 150px;
+    /* Adjust the size of the logo */
+}
+
+/* Styling for the hamburger menu */
+.hamburger {
+    display: none;
+    position: absolute;
+    right: 10px;
+    /* Move hamburger to the far right */
+    z-index: 11;
+    --x-width: 50px;
+    /* --x-width: calc(10px); */
+    display: flex;
+    flex-direction: column;
+    gap: var(--hamburger-gap);
+    width: max-content;
+    float: right;
+    cursor: pointer;
+
 }
 
 .navitem {
     font-size: 50px;
     list-style: none;
-    
+
 }
 
 
 
-.hamburger {
-    --x-width: 50px;
-    /* --x-width: calc(10px); */
-
-
-    display: flex;
-    flex-direction: column;
-    gap: var(--hamburger-gap);
-    width: max-content;
-    position: relative;
-    float: right;
-    cursor: pointer;
-}
 
 .hamburger:has(input:checked) {
     --foreground: var(--saddle15);
@@ -115,16 +139,19 @@ nav {
     transition: translate var(--animation-timing);
     translate: 0 -100%;
     position: absolute;
+
     display: grid;
     align-items: center;
     background-color: var(--saddle15);
     color: var(--saddle);
     min-width: 100vw;
+    width: 100%;
     min-height: 100vh;
+    top: 0px;
+    left: 0px;
 
 }
 
 .hamburger:has(input:checked)+.navlist {
     translate: 0 0;
 }
-

@@ -3,3 +3,14 @@
     width: 400px;
     object-fit: cover;
 }
+
+.tags {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.project-image {
+    max-width: 100%;
+    height: auto;
+}

@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { Button, Alert } from 'react-native';
+
 import Navbar from './Navbar';
 import Footer from './Footer';
 import Home from './pages/Home';
@@ -6,6 +8,7 @@ import About from './pages/About';
 import Blog from './pages/Projects';
 import Contact from './pages/Contact';
 import "../assets/styles/globals.css"
+
 
 export default function Container() {
   const [currentPage, setCurrentPage] = useState('Home');
@@ -37,7 +40,7 @@ export default function Container() {
       <main>
       {renderPage()}
       </main>
-      <Footer />
+      <Footer currentPage={currentPage} handlePageChange={handlePageChange} />
     </div>
   );
 }

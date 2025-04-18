@@ -137,9 +137,6 @@ a {
   text-decoration: none;
 }
 
-main {
-  padding-top: 60px;
-}
 
 .webpadding {
   padding: 0 .75rem;
@@ -173,4 +170,15 @@ main {
 
 }
 
+.myButton {
+  margin: 5px;
+  padding: 10px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--forest);
+}
 
+.space {
+  padding: 10px;
+}

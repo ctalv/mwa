@@ -1,57 +1,70 @@
 import * as React from "react";
-import { Link } from "react-router-dom";
-import projectList from "../../assets/data/projects";
+import { Link, useParams } from "react-router-dom";
+import itemLists from "../../assets/data/index";
 import "../../assets/styles/projects.css"
-// import photoRiceVillage from "../../assets/images/projects/RachelAlysePhotographyTheOwenGroupChristmas-2.jpg"
-// import "../../assets/data/projects"
-// import riceBlvdMain from "../../assets/images/projects/Rice_Blvd/RachelAlysePhotographyTheOwenGroupChristmas-2.jpg"
-// import riceBlvd1 from "../../assets/images/projects/Rice_Blvd/RachelAlysePhotographyTheOwenGroupChristmas-22.jpg"
-// import riceBlvd2 from "../../assets/images/projects/Rice_Blvd/RachelAlysePhotographyTheOwenGroupChristmas-33.jpg"
-// import riceBlvd3 from "../../assets/images/projects/Rice_Blvd/RachelAlysePhotographyTheOwenGroupChristmas-35.jpg"
 
-// const NAMEImages = importAll(require.context('../images/projects/DIRECTORY', false, '/\.jpg/'));
-// const riceBlvdImages = importAll(require.context('../images/projects/Rice_Blvd', false, '/\.jpg$/'));
-
-
-// const projectList = [
-//     {
-//         title: "Rice Blvd",
-//         mainImage: riceBlvdMain,
-//         mainAlt: "Rice Boulevard main image.",
-//         galleryImages: [riceBlvd1, riceBlvd2, riceBlvd3],
-//         description : "This is where you will do a description of your project. Rice Blvd"
-//     },
-//     {
-//         title: "Rice Blvd 2",
-//         mainImage: riceBlvdMain,
-//         mainAlt: "Rice Boulevard main image.",
-//         galleryImages: [riceBlvd1, riceBlvd2, riceBlvd3],
-//         description : "This is where you will do a description of your project. Rice Blvd"
-//     },
-// ]
 
 function Projects() {
-    
-    
+
+    const { tagId } = useParams();
+
+    let sortList = []
+    if (tagId) {
+        let id = Number(tagId)
+        sortList = itemLists.images.filter(item => item.tag === id)
+    } else {
+        sortList = itemLists.projects
+    }
+
+
 
     return (
-        <div class="projects">
-            <h2 class="text-center">Projects</h2>
-            <div class="container">
-                <div class="gallery text-center row">
-                    {projectList.map(item => (
-                        <div class="project col">
-                            <Link to={`/project/${item.title}`}>
-                                <img class="project-photo col" src={item.mainImage}
-                                    alt={item.mainAlt} />
-                                <h3>{item.title}</h3>
-                            </Link>
+        <main>
+            <div className="projects">
+                <h2 className="text-center">GALLERY</h2>
+
+                <div className="container">
+                    <div className="gallery text-center row">
+                        <div className="tags">
+                            <h3>Show:</h3>
+                            <div className="tags d-flex flex-wrap">
+                                {itemLists.tags.map(item => (
+                                    <div className="">
+                                        <Link to={`/projects/${item.id}`} >
+
+                                            <button className="myButton"
+                                                style={{
+                                                    backgroundColor: Number(tagId) === item.id ? '#0b4050' : '#2e2c1b',
+                                                }}>
+                                                {item.tag}
+                                            </button>
+                                        </Link>
+                                    </div>
+                                ))}
+                                <div>
+                                    <Link to="/projects" >
+                                        <button className="myButton">
+                                            Clear
+                                        </button>
+                                    </Link>
+
+                                </div>
+                            </div>
                         </div>
 
-                    ))}
+                        {sortList.map(item => (
+                            <div className="project col">
+                                <Link to={`/project/${item.project}`}>
+                                    <img className="project-photo col" src={item.image}
+                                        alt={item.alt} />
+                                    <h3>{item.project}</h3>
+                                </Link>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
-        </div>
+        </main>
     );
 }
 
