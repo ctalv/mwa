@@ -1,166 +1,41 @@
-import riceBlvd1 from "../images/projects/Rice_Blvd/RachelAlysePhotographyTheOwenGroupChristmas.jpg";
-import riceBlvd4 from "../images/projects/Rice_Blvd/RachelAlysePhotographyTheOwenGroupChristmas-4.jpg";
-import riceBlvd5 from "../images/projects/Rice_Blvd/RachelAlysePhotographyTheOwenGroupChristmas-5.jpg";
-import riceBlvd7 from "../images/projects/Rice_Blvd/RachelAlysePhotographyTheOwenGroupChristmas-7.jpg";
-import riceBlvd11 from "../images/projects/Rice_Blvd/RachelAlysePhotographyTheOwenGroupChristmas-11.jpg";
-import riceBlvd12 from "../images/projects/Rice_Blvd/RachelAlysePhotographyTheOwenGroupChristmas-12.jpg";
-import riceBlvd15 from "../images/projects/Rice_Blvd/RachelAlysePhotographyTheOwenGroupChristmas-15.jpg";
-import riceBlvd21 from "../images/projects/Rice_Blvd/RachelAlysePhotographyTheOwenGroupChristmas-21.jpg";
-import riceBlvd23 from "../images/projects/Rice_Blvd/RachelAlysePhotographyTheOwenGroupChristmas-23.jpg";
-import riceBlvd24 from "../images/projects/Rice_Blvd/RachelAlysePhotographyTheOwenGroupChristmas-24.jpg";
-import riceBlvd26 from "../images/projects/Rice_Blvd/RachelAlysePhotographyTheOwenGroupChristmas-26.jpg";
-import riceBlvd28 from "../images/projects/Rice_Blvd/RachelAlysePhotographyTheOwenGroupChristmas-28.jpg";
-import riceBlvd29 from "../images/projects/Rice_Blvd/RachelAlysePhotographyTheOwenGroupChristmas-29.jpg";
-import riceBlvd31 from "../images/projects/Rice_Blvd/RachelAlysePhotographyTheOwenGroupChristmas-31.jpg";
-import riceBlvd33 from "../images/projects/Rice_Blvd/RachelAlysePhotographyTheOwenGroupChristmas-33.jpg";
-import riceBlvd36 from "../images/projects/Rice_Blvd/RachelAlysePhotographyTheOwenGroupChristmas-36.jpg";
-import riceBlvd39 from "../images/projects/Rice_Blvd/RachelAlysePhotographyTheOwenGroupChristmas-39.jpg";
+import tagList from "./tags";
+import projectList from "./projects";
 
-const projectList = [
-    {
-        project: "Rice Village",
-        image: riceBlvd1,
-        alt: "Rice Boulevard main image.",
-        description: "This is where you will do a description of your project. Rice Blvd"
-    }
-]
+// ###### MODIFY START ################################
+import Sea_and_Bar_1751 from "./projects/1751_Sea_&_Bar";
+import Sunset_2027 from "./projects/2027_Sunset";
+import DUO_Cafe_2147 from "./projects/2147_DUO_Cafe_Photos";
+import Albans_2426 from "./projects/2426_Albans";
+import Dryden_2428 from "./projects/2428_Dryden";
+import Rice_3310 from "./projects/3310_Rice";
+import Harper_3723 from "./projects/3723_Harper";
+import W_Alabama_4522 from "./projects/4522_W_Alabama";
+import Forest_Glen_11705 from "./projects/11705_Forest_Glen";
+import Kimberley_Ln_13319 from "./projects/13319_Kimberley_Ln";
+import Oak_Bend_14615 from "./projects/14615_Oak_Bend";
 
-const tagList = [
-    {
-        id: 0,
-        tag: "Detail",
-    },
-    {
-        id: 1,
-        tag: "Kitchen"
-    },
-    {
-        id: 2,
-        tag: "Bathroom"
-    },
-    {
-        id: 3,
-        tag: "Living"
-    },
-    {
-        id: 4,
-        tag: "Dining"
-    },
-    {
-        id: 5,
-        tag: "Entryway"
-    },
-    {
-        id: 6,
-        tag: "Office"
-    }
-]
+
+// add new project list here
+// EXAMPLE: copy the line below and change to match the project name
+// import RENAME_project from "./projects/template";
 
 const imageList = [
-    {
-        project: "Rice Village",
-        alt: "Stylish kitchen island",
-        tag: 1,
-        image: riceBlvd1
-    },
-    {
-        project: "Rice Village",
-        alt: "Lamp on a wall",
-        tag: 1,
-        image: riceBlvd4
-    },
-    {
-        project: "Rice Village",
-        alt: "Chair with fireplace",
-        tag: 1,
-        image: riceBlvd5
-    },
-    {
-        project: "Rice Village",
-        alt: "Wicker chair dining area",
-        tag: 1,
-        image: riceBlvd7
-    },
-    {
-        project: "Rice Village",
-        alt: "Stylish kitchen island",
-        tag: 1,
-        image: riceBlvd11
-    },
-    {
-        project: "Rice Village",
-        alt: "Stylish kitchen island",
-        tag: 1,
-        image: riceBlvd12
-    },
-    {
-        project: "Rice Village",
-        alt: "Stylish kitchen island",
-        tag: 0,
-        image: riceBlvd15
-    },
-    {
-        project: "Rice Village",
-        alt: "Stylish kitchen island",
-        tag: 0,
-        image: riceBlvd21
-    },
-    {
-        project: "Rice Village",
-        alt: "Stylish kitchen island",
-        tag: 0,
-        image: riceBlvd23
-    },
-    {
-        project: "Rice Village",
-        alt: "Stylish kitchen island",
-        tag: 5,
-        image: riceBlvd24
-    },
-
-    {
-        project: "Rice Village",
-        alt: "Stylish kitchen island",
-        tag: 5,
-        image: riceBlvd26
-    },
-    {
-        project: "Rice Village",
-        alt: "Stylish kitchen island",
-        tag: 4,
-        image: riceBlvd28
-    },
-    {
-        project: "Rice Village",
-        alt: "Stylish kitchen island",
-        tag: 4,
-        image: riceBlvd29
-    },
-    {
-        project: "Rice Village",
-        alt: "Stylish kitchen island",
-        tag: 6,
-        image: riceBlvd31
-    },
-    {
-        project: "Rice Village",
-        alt: "Stylish kitchen island",
-        tag: 3,
-        image: riceBlvd33
-    },
-    {
-        project: "Rice Village",
-        alt: "Stylish kitchen island",
-        tag: 4,
-        image: riceBlvd36
-    },
-    {
-        project: "Rice Village",
-        alt: "Stylish kitchen island",
-        tag: 2,
-        image: riceBlvd39
-    }
+    ...Sea_and_Bar_1751,
+    ...Sunset_2027,
+    ...DUO_Cafe_2147,
+    ...Albans_2426,
+    ...Dryden_2428,
+    ...Rice_3310,
+    ...Harper_3723,
+    ...W_Alabama_4522,
+    ...Forest_Glen_11705,
+    ...Kimberley_Ln_13319,
+    ...Oak_Bend_14615,
+    // ...RENAME_project
 ]
+
+// const imageList = Rice_3310
+// ####### MODIFY END ##################################
 
 const itemLists = {
     projects: projectList,
