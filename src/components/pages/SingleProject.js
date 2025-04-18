@@ -13,19 +13,19 @@ function SingleProject() {
 
     return (
         <main>
-        <div className="projects">
-            <h2 className="text-center">{project.project}</h2>
-            <p className="text-center">{project.description}</p>
-            <div className="container">
-                <div className="gallery text-center row">
-                    {images.map(item => (
-                    <div className="project col space">
-                        <img src={item.image} alt={item.alt}/>
+            <div className="projects">
+                <h2 className="text-center">{project.project}</h2>
+                <p className="text-center">{project.description}</p>
+                <div className="container">
+                    <div className="gallery text-center">
+                        {images.map(item => (
+                            <div className="project row space">
+                                <img className="project-image" src={item.image} alt={item.alt} />
+                            </div>
+                        ))}
                     </div>
-                ))}
                 </div>
             </div>
-        </div>
         </main>
     );
 }

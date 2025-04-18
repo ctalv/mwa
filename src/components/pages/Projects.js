@@ -1,6 +1,5 @@
 import * as React from "react";
 import { Link, useParams } from "react-router-dom";
-import projectList from "../../assets/data/projects";
 import itemLists from "../../assets/data/index";
 import "../../assets/styles/projects.css"
 
@@ -17,7 +16,6 @@ function Projects() {
         sortList = itemLists.projects
     }
 
-    console.log(sortList)
 
 
     return (
@@ -27,34 +25,30 @@ function Projects() {
 
                 <div className="container">
                     <div className="gallery text-center row">
-                        <div  className="tags">
+                        <div className="tags">
                             <h3>Show:</h3>
-                            <div  className="tags">
+                            <div className="tags d-flex flex-wrap">
                                 {itemLists.tags.map(item => (
                                     <div className="">
                                         <Link to={`/projects/${item.id}`} >
 
-                                        <button className="myButton"
-                                        style={{
-                                            backgroundColor: Number(tagId) === item.id ? '#0b4050' : '#2e2c1b',
-                                        }}>
-                                            {item.tag}
-                                        </button>
+                                            <button className="myButton"
+                                                style={{
+                                                    backgroundColor: Number(tagId) === item.id ? '#0b4050' : '#2e2c1b',
+                                                }}>
+                                                {item.tag}
+                                            </button>
                                         </Link>
-
                                     </div>
-                                    
                                 ))}
                                 <div>
-                                <Link to="/projects" >
-
-                                        <button className="myButton"
-                                                                    >
-                                        Clear
-                                    </button>
+                                    <Link to="/projects" >
+                                        <button className="myButton">
+                                            Clear
+                                        </button>
                                     </Link>
 
-                                    </div>
+                                </div>
                             </div>
                         </div>
 
