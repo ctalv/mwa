@@ -1,0 +1,12 @@
+.contact-us-page {
+    padding-top: 10px;
+}
+
+
+
+.contact-us-img {
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
