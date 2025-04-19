@@ -73,7 +73,7 @@ const projectList = [
     {
         id: 10,
         project: "13319 Kimberly Ln",
-        image: require("../images/projects/13319 Kimberly Ln/Kimberly_Primary_Bath_v2.png"),
+        image: require("../images/projects/13319 Kimberly Ln/Kimberly_Primary_Bath_v2.jpg"),
         alt: "13319 Kimberly Ln main image.",
         description: "This is where you can write a description of your project."
     },    
