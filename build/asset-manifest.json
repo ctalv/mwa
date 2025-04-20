@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mwa/build/static/css/main.8845f54e.css",
-    "main.js": "/mwa/build/static/js/main.3bee3cd9.js",
+    "main.js": "/mwa/build/static/js/main.6905b641.js",
     "static/js/453.1f35141a.chunk.js": "/mwa/build/static/js/453.1f35141a.chunk.js",
     "static/media/Michael Hunter 2-23.JPG": "/mwa/build/static/media/Michael Hunter 2-23.b4bb669957a90f96a6c3.JPG",
     "static/media/Michael Hunter -2-2.JPG": "/mwa/build/static/media/Michael Hunter -2-2.7c93d68c5267b83bbbae.JPG",
@@ -205,11 +205,11 @@
     "static/media/revicons.woff": "/mwa/build/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/mwa/build/index.html",
     "main.8845f54e.css.map": "/mwa/build/static/css/main.8845f54e.css.map",
-    "main.3bee3cd9.js.map": "/mwa/build/static/js/main.3bee3cd9.js.map",
+    "main.6905b641.js.map": "/mwa/build/static/js/main.6905b641.js.map",
     "453.1f35141a.chunk.js.map": "/mwa/build/static/js/453.1f35141a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8845f54e.css",
-    "static/js/main.3bee3cd9.js"
+    "static/js/main.6905b641.js"
   ]
 }
