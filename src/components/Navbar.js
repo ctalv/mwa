@@ -13,14 +13,10 @@ function Navbar({ currentPage, handlePageChange }) {
   return (
     <nav>
       <Link className="navlogo" to="/">
-      <img className="navlogo" src={logomarkMain} alt="Splash image placeholder" priority />
+        <img className="navlogo" src={logomarkMain} alt="Splash image placeholder" priority />
       </Link>
-      <label className="hamburger">
-        <input className="check" type='checkbox' />
-      </label>
-      <div className="navlist">
-      <menu className="text-center">
-        <li className="navitem">
+      <menu className="row">
+        <li className="navitem col">
           <Link
             to="/"
             onClick={() => clickNavEvent('Home')}
@@ -32,7 +28,7 @@ function Navbar({ currentPage, handlePageChange }) {
           </Link>
         </li>
 
-        <li className="navitem">
+        <li className="navitem col">
           <Link
             to="projects"
             onClick={() => clickNavEvent('Projects')}
@@ -42,7 +38,7 @@ function Navbar({ currentPage, handlePageChange }) {
           >
             Projects
           </Link></li>
-        <li className="navitem">
+        <li className="navitem col">
           <Link
             to="about"
             onClick={() => clickNavEvent('About')}
@@ -51,7 +47,7 @@ function Navbar({ currentPage, handlePageChange }) {
             className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
           >About
           </Link></li>
-        <li className="navitem">
+        <li className="navitem col">
           <Link
             to="contact"
             onClick={() => clickNavEvent('Contact')}
@@ -61,7 +57,6 @@ function Navbar({ currentPage, handlePageChange }) {
           >Contact
           </Link></li>
       </menu>
-      </div>
     </nav>
   );
 }

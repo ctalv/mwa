@@ -11,14 +11,15 @@ import Carousel from 'react-bootstrap/Carousel';
 
 
 function Home() {
-    const [selectedTag, setSelectedTag] = useState(0);
-    console.log(selectedTag)
-    const htmlTag = itemLists.tags.find((item) => item.id === selectedTag)
-    const filteredImages = itemLists.images.filter(item => item.tag === selectedTag);
+    // const [selectedTag, setSelectedTag] = useState(0);
+    // console.log(selectedTag)
+    // const htmlTag = itemLists.tags.find((item) => item.id === selectedTag)
+    // const filteredImages = itemLists.images.filter(item => item.tag === selectedTag);
 
-    const handleTagClick = (tag) => {
-        setSelectedTag(tag);
-    };
+
+    // const handleTagClick = (tag) => {
+    //     setSelectedTag(tag);
+    // };
 
     const responsive = {
         superLargeDesktop: {
@@ -48,7 +49,13 @@ function Home() {
 
     return (
         <div className="homepage">
-            <img className="full_page_img" src={homeImage} alt="Splash placeholder" />
+            <Carousel className="carousel-react slide" fade controls={false} indicators={false}>
+                    {itemLists.homeImages.map((item, index) => (
+                        <Carousel.Item className="carousel-item">
+                            <img className="carousel-image d-block  w-100 " src={item.image} alt={item.alt} />
+                        </Carousel.Item>
+                    ))}
+                </Carousel>
             <div className="description container my-5">
                 <p>
                     This is where you can write everything about how cool you are.
@@ -59,7 +66,7 @@ function Home() {
                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
             </div>
-            <div className="container my-5">
+            {/* <div className="container my-5">
                 <div className="tags  d-flex flex-wrap">
                     {itemLists.tags.map(item => (
                         <div>
@@ -93,7 +100,7 @@ function Home() {
                 </Carousel>
 
 
-            </div>
+            </div> */}
             <script src={script} />
 
         </div>

@@ -1,4 +1,5 @@
 import tagList from "./tags";
+import homeImagesList from "./homeImages";
 import projectList from "./projects";
 
 // ###### MODIFY START ################################
@@ -40,7 +41,8 @@ const imageList = [
 const itemLists = {
     projects: projectList,
     tags: tagList,
-    images: imageList
+    images: imageList,
+    homeImages: homeImagesList
 }
 
 
