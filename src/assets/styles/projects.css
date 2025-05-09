@@ -14,3 +14,11 @@
     max-width: 100%;
     height: auto;
 }
+
+.project-title {
+    position:relative;
+  /* top: 50%;
+  left: 50%; */
+  transform: translate(0%, -110%);
+  color: var(--saddle15);
+}

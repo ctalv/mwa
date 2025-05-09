@@ -57,7 +57,7 @@ function Projects() {
                                 <Link to={`/project/${item.project}`}>
                                     <img className="project-photo col" src={item.image}
                                         alt={item.alt} />
-                                    <h3>{item.project}</h3>
+                                    <h3 className="project-title">{item.project}</h3>
                                 </Link>
                             </div>
                         ))}
