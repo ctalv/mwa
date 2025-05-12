@@ -21,7 +21,7 @@ function Navbar({ currentPage, handlePageChange }) {
             onClick={() => clickNavEvent('Home')}
             // This is a conditional (ternary) operator that checks to see if the current page is "Home"
             // If it is, we set the current page to 'nav-link-active', otherwise we set it to 'nav-link'
-            className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
+            className={currentPage === 'Home' ? 'nav-link padding-nav active' : 'nav-link padding-nav'}
           >
             HOME
           </Link>
@@ -33,7 +33,7 @@ function Navbar({ currentPage, handlePageChange }) {
             onClick={() => clickNavEvent('Projects')}
             // This is a conditional (ternary) operator that checks to see if the current page is "Home"
             // If it is, we set the current page to 'nav-link-active', otherwise we set it to 'nav-link'
-            className={currentPage === 'Projects' ? 'nav-link active' : 'nav-link'}
+            className={currentPage === 'Projects' ? 'nav-link padding-nav active' : 'nav-link padding-nav'}
           >
             PROJECTS
           </Link></li>
@@ -51,7 +51,7 @@ function Navbar({ currentPage, handlePageChange }) {
             onClick={() => clickNavEvent('About')}
             // This is a conditional (ternary) operator that checks to see if the current page is "Home"
             // If it is, we set the current page to 'nav-link-active', otherwise we set it to 'nav-link'
-            className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
+            className={currentPage === 'About' ? 'nav-link active padding-nav' : 'nav-link padding-nav'}
           >ABOUT
           </Link></li>
         <li className="navitem">
@@ -60,7 +60,7 @@ function Navbar({ currentPage, handlePageChange }) {
             onClick={() => clickNavEvent('Contact')}
             // This is a conditional (ternary) operator that checks to see if the current page is "Home"
             // If it is, we set the current page to 'nav-link-active', otherwise we set it to 'nav-link'
-            className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
+            className={currentPage === 'Contact' ? 'nav-link active padding-nav' : 'nav-link padding-nav'}
           >CONTACT
           </Link></li>
       </menu>

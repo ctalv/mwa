@@ -14,7 +14,7 @@ function Footer({ currentPage, handlePageChange }) {
     checkbox.checked = false;
   }
   return (
-    <footer>
+    <footer className="d-flex justify-content-around">
       <div className="footerleft">
         <div className="footerlogodiv">
           <a href="/"><img className="footerlogo" src={mainLogo} alt="Mitchell Wilson Main Logo"
