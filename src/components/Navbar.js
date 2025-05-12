@@ -2,6 +2,7 @@ import React from "react";
 import "../assets/styles/navbar.css";
 import logomarkSaddle from "../assets/images/MWA-logomark-saddle.png";
 import logomarkMain from "../assets/images/MWA-main-logo-saddle.png";
+import logotypeSaddle from "../assets/images/MWA-logotype-saddle.png";
 import { Link } from "react-router-dom";
 
 function Navbar({ currentPage, handlePageChange }) {
@@ -12,11 +13,9 @@ function Navbar({ currentPage, handlePageChange }) {
   }
   return (
     <nav>
-      <Link className="navlogo" to="/">
-        <img className="navlogo" src={logomarkMain} alt="Splash image placeholder" priority />
-      </Link>
-      <menu className="row">
-        <li className="navitem col">
+      
+      <menu className="d-flex justify-content-around">
+        <li className="navitem">
           <Link
             to="/"
             onClick={() => clickNavEvent('Home')}
@@ -24,11 +23,11 @@ function Navbar({ currentPage, handlePageChange }) {
             // If it is, we set the current page to 'nav-link-active', otherwise we set it to 'nav-link'
             className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
           >
-            Home
+            HOME
           </Link>
         </li>
 
-        <li className="navitem col">
+        <li className="navitem">
           <Link
             to="projects"
             onClick={() => clickNavEvent('Projects')}
@@ -36,25 +35,33 @@ function Navbar({ currentPage, handlePageChange }) {
             // If it is, we set the current page to 'nav-link-active', otherwise we set it to 'nav-link'
             className={currentPage === 'Projects' ? 'nav-link active' : 'nav-link'}
           >
-            Projects
+            PROJECTS
           </Link></li>
-        <li className="navitem col">
+        <li className="navitem">
+            <Link className="navlogo" to="/">
+<div className="navlogo" >
+        <img className="navlogomark" src={logomarkSaddle} alt="Splash image placeholder" priority />
+        <img className="navlogotype" src={logotypeSaddle} alt="Splash image placeholder" priority />
+      </div>
+      </Link>
+          </li>
+        <li className="navitem">
           <Link
             to="about"
             onClick={() => clickNavEvent('About')}
             // This is a conditional (ternary) operator that checks to see if the current page is "Home"
             // If it is, we set the current page to 'nav-link-active', otherwise we set it to 'nav-link'
             className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
-          >About
+          >ABOUT
           </Link></li>
-        <li className="navitem col">
+        <li className="navitem">
           <Link
             to="contact"
             onClick={() => clickNavEvent('Contact')}
             // This is a conditional (ternary) operator that checks to see if the current page is "Home"
             // If it is, we set the current page to 'nav-link-active', otherwise we set it to 'nav-link'
             className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
-          >Contact
+          >CONTACT
           </Link></li>
       </menu>
     </nav>
