@@ -1,3 +1,7 @@
+.project {
+    position: relative;
+}
+
 .project-photo {
     height: 300px;
     width: 400px;
@@ -11,14 +15,23 @@
 }
 
 .project-image {
+    display: block;
     max-width: 100%;
     height: auto;
 }
 
 .project-title {
-    position:relative;
+    width: 400px;
+     position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%);
+color: var(--saddle-dark);
+background-color: var(--saddle15);
+opacity: 0.7;
+    /* left: 50%; */
   /* top: 50%;
   left: 50%; */
-  transform: translate(0%, -110%);
-  color: var(--saddle15);
+  /* transform: translate(0%, -110%);
+  color: var(--saddle15); */
 }

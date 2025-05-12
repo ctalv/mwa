@@ -53,13 +53,13 @@ function Projects() {
                         </div>
 
                         {sortList.map(item => (
-                            <div className="project col">
-                                <Link to={`/project/${item.project}`}>
+                            // <div className="project col">
+                                <Link className="project col" to={`/project/${item.project}`}>
                                     <img className="project-photo col" src={item.image}
                                         alt={item.alt} />
                                     <h3 className="project-title">{item.project}</h3>
                                 </Link>
-                            </div>
+                            // </div>
                         ))}
                     </div>
                 </div>
