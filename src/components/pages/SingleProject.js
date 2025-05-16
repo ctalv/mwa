@@ -29,6 +29,15 @@ function topFunction() {
                             </div>
                         ))}
                     </div>
+                    <div>
+                        <h3>CONTRIBUTIONS:</h3>
+                        <h3>Architect</h3>
+                        <h4>{project.contributors.architects}</h4>
+                        <h3>Interior Design</h3>
+                        <h4>{project.contributors.interior}</h4>
+                        <h3>Photography</h3>
+                        <h4>{project.contributors.photography}</h4>
+                    </div>
                     <div className="d-flex justify-content-between">
                         <Link onClick={topFunction()} to={`/project/${itemLists.projects[index-1].project}`}>
                             Previous
