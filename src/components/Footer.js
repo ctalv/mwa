@@ -1,6 +1,7 @@
 import React from "react";
 import "../assets/styles/footer.css";
 import mainLogo from "../assets/images/MWA-main-logo-saddle.png"
+import logomark from "../assets/images/MWA-logomark-saddle.png"
 import instagram from "../assets/images/Instagram_icon.png"
 import linkedin from "../assets/images/LI-In-Bug.png"
 import { Link } from "react-router-dom";
@@ -14,10 +15,10 @@ function Footer({ currentPage, handlePageChange }) {
     checkbox.checked = false;
   }
   return (
-    <footer className="d-flex justify-content-around">
+    <footer className="d-flex justify-content-center">
       <div className="footerleft">
         <div className="footerlogodiv">
-          <a href="/"><img className="footerlogo" src={mainLogo} alt="Mitchell Wilson Main Logo"
+          <a href="/"><img className="footerlogo" src={logomark} alt="Mitchell Wilson Main Logo"
             priority />
           </a>
         </div>

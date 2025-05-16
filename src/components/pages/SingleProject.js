@@ -1,16 +1,21 @@
 import React from "react";
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import "../../assets/styles/projects.css";
 // import photoRiceVillage from "../../assets/images/projects/RachelAlysePhotographyTheOwenGroupChristmas-2.jpg"
 // import projectList from "../../assets/data/projects";
 import itemLists from "../../assets/data/index";
 
+
 function SingleProject() {
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+} 
 
     const { title } = useParams();
-    const project = itemLists.projects.find(item => item.project === title)
+    const index = itemLists.projects.findIndex(item => item.project === title)
+    const project = itemLists.projects[index]
     const images = itemLists.images.filter(item => item.project === title)
-
     return (
         <main>
             <div className="projects">
@@ -23,6 +28,14 @@ function SingleProject() {
                                 <img className="project-image" src={item.image} alt={item.alt} />
                             </div>
                         ))}
+                    </div>
+                    <div className="d-flex justify-content-between">
+                        <Link onClick={topFunction()} to={`/project/${itemLists.projects[index-1].project}`}>
+                            Previous
+                        </Link>
+                        <Link onClick={topFunction()} to={`/project/${itemLists.projects[index+1].project}`}>
+                            Next
+                        </Link>
                     </div>
                 </div>
             </div>
