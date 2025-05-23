@@ -44,18 +44,18 @@ function Home() {
     const [index, setIndex] = useState(0);
 
     const handleSelect = (selectedIndex) => {
-      setIndex(selectedIndex);
+        setIndex(selectedIndex);
     };
 
     return (
         <div className="homepage">
-            <Carousel className="carousel-react slide" fade controls={false} indicators={false}>
-                    {itemLists.homeImages.map((item, index) => (
-                        <Carousel.Item className="carousel-item">
-                            <img className="carousel-image d-block  w-100 " src={item.image} alt={item.alt} />
-                        </Carousel.Item>
-                    ))}
-                </Carousel>
+            <Carousel className="carousel-react slide carousel-fit" fade controls={false} indicators={false}>
+                {itemLists.homeImages.map((item, index) => (
+                    <Carousel.Item className="carousel-item">
+                        <img className="carousel-image d-block  w-100 " src={item.image} alt={item.alt} />
+                    </Carousel.Item>
+                ))}
+            </Carousel>
             <div className="description container my-5">
                 <p>
                     This is where you can write everything about how cool you are.

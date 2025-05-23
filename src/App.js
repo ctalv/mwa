@@ -6,6 +6,7 @@ import About from '../src/components/pages/About';
 import Home from '../src/components/pages/Home';
 import Contact from '../src/components/pages/Contact';
 import Projects from '../src/components/pages/Projects';
+import Container from "./components/pages/Container";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./assets/styles/globals.css"
@@ -22,6 +23,8 @@ function App () {
     return (
         <div>
             <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
+            
+
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
@@ -31,6 +34,7 @@ function App () {
                 <Route path="/project/:title" element={<SingleProject />} />
             </Routes>
             <Footer currentPage={currentPage} handlePageChange={handlePageChange} />
+            
         </div>
     );
 
