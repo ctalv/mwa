@@ -1,5 +1,7 @@
 import tagList from "./tags";
+import homeImagesList from "./homeImages";
 import projectList from "./projects";
+import aboutList from "./about";
 
 // ###### MODIFY START ################################
 import Sea_and_Bar_1751 from "./projects/1751_Sea_&_Bar";
@@ -40,7 +42,9 @@ const imageList = [
 const itemLists = {
     projects: projectList,
     tags: tagList,
-    images: imageList
+    images: imageList,
+    homeImages: homeImagesList,
+    about: aboutList
 }
 
 

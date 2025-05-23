@@ -1,9 +1,9 @@
 footer {
-  padding-top: 100px;
-  padding-bottom: 50px;
-  display: flex;
+  padding-top: 50px;
+  /* padding-bottom: 50px; */
+  /* display: flex; */
   
-  justify-content: space-between;
+  /* justify-content: space-between; */
   /* align-items: center; */
   position:relative;
 }
@@ -42,7 +42,7 @@ footer {
 
   
 .footerlogo {
-  width: 200px;
+  width: 100px;
   height: auto;
 }
 .mininavitem{
@@ -76,10 +76,9 @@ footer {
 
 .footerbottom {
   text-align: center;
-  width: 100%;
-  background-color: var(--saddle15); /* Darker color for footer bottom */
+  max-width: vw;
   padding: 10px 0;
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
 }
 
