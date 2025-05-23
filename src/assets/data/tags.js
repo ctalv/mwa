@@ -3,51 +3,51 @@
 const tagList = [
     {
         id: 0,
-        tag: "Detail",
+        tag: "DETAIL",
     },
     {
         id: 1,
-        tag: "Kitchen"
+        tag: "KITCHEN"
     },
     {
         id: 2,
-        tag: "Bathroom"
+        tag: "BATHROOM"
     },
     {
         id: 11,
-        tag: "Bedroom"
+        tag: "BEDROOM"
     },
     {
         id: 3,
-        tag: "Living"
+        tag: "LIVING"
     },
     {
         id: 4,
-        tag: "Dining"
+        tag: "DINING"
     },
     {
         id: 5,
-        tag: "Entryway"
+        tag: "ENTRYWAY"
     },
     {
         id: 6,
-        tag: "Office"
+        tag: "OFFICE"
     },
     {
         id: 8,
-        tag: "Bar"
+        tag: "BAR"
     },
     {
         id: 10,
-        tag: "Utility"
+        tag: "UTILITY"
     },
     {
         id: 7,
-        tag: "Exterior"
+        tag: "EXTERIOR"
     },
     {
         id: 9,
-        tag: "Commercial"
+        tag: "COMMERCIAL"
     },
     
 
