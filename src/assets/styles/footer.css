@@ -1,9 +1,9 @@
 footer {
   padding-top: 100px;
-  padding-bottom: 50px;
-  display: flex;
+  /* padding-bottom: 50px; */
+  /* display: flex; */
   
-  justify-content: space-between;
+  /* justify-content: space-between; */
   /* align-items: center; */
   position:relative;
 }
@@ -76,10 +76,10 @@ footer {
 
 .footerbottom {
   text-align: center;
-  width: 100%;
+  max-width: vw;
   background-color: var(--saddle15); /* Darker color for footer bottom */
   padding: 10px 0;
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
 }
 
