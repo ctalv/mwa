@@ -1,3 +1,12 @@
+.projects{
+    color: var(--saddle);
+    /* font: optional; */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    /* font-weight: 200; */
+    /* fon */
+}
+
 .project {
     position: relative;
 }
@@ -22,13 +31,13 @@
 
 .project-title {
     width: 400px;
-     position: absolute;
-  bottom: 0%;
-  left: 50%;
-  transform: translate(-50%);
-color: var(--saddle-dark);
-background-color: var(--saddle15);
-opacity: 0.7;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%);
+/* color: var(--saddle-dark); */
+    background-color: var(--saddle15);
+    opacity: 0.7;
     /* left: 50%; */
   /* top: 50%;
   left: 50%; */

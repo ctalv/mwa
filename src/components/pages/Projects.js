@@ -21,20 +21,20 @@ function Projects() {
     return (
         <main>
             <div className="projects">
-                <h2 className="text-center">GALLERY</h2>
+                <h2 className="text-center header">GALLERY</h2>
 
                 <div className="container">
                     <div className="gallery text-center row">
-                        <div className="tags">
-                            <h3>Show:</h3>
-                            <div className="tags d-flex flex-wrap">
+                        <div className="d-flex justify-content-center">
+                            <div className="tags d-flex flex-wrap justify-content-center">
                                 {itemLists.tags.map(item => (
                                     <div className="">
                                         <Link to={`/projects/${item.id}`} >
 
                                             <button className="myButton"
                                                 style={{
-                                                    backgroundColor: Number(tagId) === item.id ? '#0b4050' : '#2e2c1b',
+                                                    // backgroundColor: Number(tagId) === item.id ? '#0b4050' : '',
+                                                    color: Number(tagId) === item.id ? '#2e2c1b' : '#8b6127',
                                                 }}>
                                                 {item.tag}
                                             </button>
