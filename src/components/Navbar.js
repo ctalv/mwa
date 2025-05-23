@@ -8,8 +8,8 @@ import { Link } from "react-router-dom";
 function Navbar({ currentPage, handlePageChange }) {
   function clickNavEvent (page)  {
     handlePageChange(page)
-    var checkbox = document.querySelector('.check');
-    checkbox.checked = false;
+    // var checkbox = document.querySelector('.check');
+    // checkbox.checked = false;
   }
   return (
     <nav>
@@ -35,7 +35,7 @@ function Navbar({ currentPage, handlePageChange }) {
             // If it is, we set the current page to 'nav-link-active', otherwise we set it to 'nav-link'
             className={currentPage === 'Projects' ? 'nav-link padding-nav active' : 'nav-link padding-nav'}
           >
-            PROJECTS
+            GALLERY
           </Link></li>
         <li className="navitem">
             <Link className="navlogo" to="/">
