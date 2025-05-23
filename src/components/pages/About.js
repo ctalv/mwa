@@ -6,25 +6,38 @@ import picElvia from "../../assets/images/Elvia.jpg";
 import picEmilia from "../../assets/images/Emilia.jpg";
 import picMeagan from "../../assets/images/Meagan.jpg";
 import picWarren from "../../assets/images/Warren.jpg";
+import itemLists from "../../assets/data";
 
 
 function About() {
+    const people = itemLists.about
     return (
         <main>
-        <div className="about">
-            <h2 className="text-center">ABOUT US</h2>
-            <div className="general container">
-                <p>
-                    Need some values, the kind of work you do, maybe a few pictures. Note to self: we can also do like a gallery
-                    transition thing on the homepages and maybe here too? Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-            </div>
-            <div className="people">
-                <h2 className="text-center">Leadership</h2>
+            <div className="about">
+                <h2 className="text-center header">ABOUT US</h2>
+                <div className="general container">
+                    <p>
+                        Need some values, the kind of work you do, maybe a few pictures. Note to self: we can also do like a gallery
+                        transition thing on the homepages and maybe here too? Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+                <div className="people row">
+                    {people.map(person => (
+                        <div className="profile col-4 " >
+                            <img className="headshot col" src={person.headshot}
+                                alt="headshot" />
+                            <div className="titles">
+                                <h3 className="person-name">{person.name}</h3>
+                                <h3 className="person-title">{person.title}</h3>
+                            </div>
+                            <div className="description">{person.description}</div>
+                        </div>
+                    ))}
+                    {/* <h2 className="text-center">Leadership</h2>
                 <div className="leadership container text-center">
                     <div className="profile row">
                         <h3>Matthew Mitchell</h3>
@@ -85,15 +98,15 @@ function About() {
                                     <img className="headshot" src={picWarren} alt="Splash image placeholder" />
                                 </div>
                                 <p className="description col ">
-                                    Warren Alverson graduated with a Professional Bachelor’s degree in Architecture from the
-                                    University of Houston, and produced an undergraduate thesis centered around design in
-                                    Houston
-                                    and Coastal Texas. Warren has experience in commercial and residential architecture in
-                                    Houston
-                                    and Galveston. In his free time, Warren designs and builds furniture for himself and his
-                                    family.
-                                    He also enjoys vacationing at National Parks and abroad with his wife, kayak fishing in the
-                                    Texas bays, and spending time with his family and friends.
+                                        Warren Alverson graduated with a Professional Bachelor’s degree in Architecture from the
+                                        University of Houston, and produced an undergraduate thesis centered around design in
+                                        Houston
+                                        and Coastal Texas. Warren has experience in commercial and residential architecture in
+                                        Houston
+                                        and Galveston. In his free time, Warren designs and builds furniture for himself and his
+                                        family.
+                                        He also enjoys vacationing at National Parks and abroad with his wife, kayak fishing in the
+                                        Texas bays, and spending time with his family and friends.
                                 </p>
                             </div>
                             <div className="profile row">
@@ -105,7 +118,7 @@ function About() {
                                     York.
                                     Emilia has a particular interest in residential and interior design, as well as painting and
                                     art
-                                    curation. She and her husband enjoy traveling, cooking different cuisines, and spending time
+                                    curation. She and her wife enjoy traveling, cooking different cuisines, and spending time
                                     with their two cats.
                                 </p>
                                 <div className="col">
@@ -156,31 +169,12 @@ function About() {
                                     <img className="headshot" src={picElvia} alt="Splash image placeholder" />
                                 </div>
                             </div>
-                            {/* <div className="profile col">
-                                <div>
-                                    <h3>Tiffany Tetlow</h3>
-                                    <h4>Virtual Assistant</h4>
-                                    <img className="headshot" src="assets/images/tiffany.jpg" alt="Splash image placeholder" />
-                                </div>
-                                <p className="description">
-                                    Tiffany Tetlow is a native of North Carolina and brings a wealth of administrative experience.
-                                    With 14 years of administrative expertise working with notable organizations such as Fort Bragg
-                                    FCU and East Carolina University, she allows organizations to thrive as she takes care of
-                                    essential details and tasks.
-                                    As a Virtual Assistant at Matthew Mitchell Architecture, Tiffany brings a wide array of skills
-                                    and responsibilities to her role. With expertise in bookkeeping, time keeping, invoicing, and
-                                    completion of proposals, she ensures smooth operations. Tiffany's exceptional organizational
-                                    abilities, technical prowess, and effective communication contribute significantly to the
-                                    success of Matthew Mitchell Architecture, ensuring efficient processes that support the
-                                    company's overall growth and achievement.
-                                    On the weekends, she can be found cheering on her daughter from the sidelines of soccer fields.
-                                </p>
-                            </div> */}
+                            
                         </div>
                     </div>
+                </div> */}
                 </div>
             </div>
-        </div>
         </main>
     );
 }

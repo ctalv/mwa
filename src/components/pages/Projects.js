@@ -44,7 +44,7 @@ function Projects() {
                                 <div>
                                     <Link to="/projects" >
                                         <button className="myButton">
-                                            Clear
+                                            CLEAR
                                         </button>
                                     </Link>
 
