@@ -43,7 +43,7 @@ function topFunction() {
                         ))}
                     </div>
                     <div>
-                        <h3>CONTRIBUTIONS:</h3>
+                        <h3>PROJECT TEAM:</h3>
                         <h3>Architect</h3>
                         <h4>{project.contributors.architects}</h4>
                         <h3>Interior Design</h3>
