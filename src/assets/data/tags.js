@@ -1,10 +1,10 @@
 // ** NOTE: if you change any of the ids, all of the images with that tag will change. **
 
 const tagList = [
-    {
-        id: 0,
-        tag: "DETAIL",
-    },
+    // {
+    //     id: 0,
+    //     tag: "DETAIL",
+    // },
     {
         id: 1,
         tag: "KITCHEN"
@@ -13,10 +13,10 @@ const tagList = [
         id: 2,
         tag: "BATHROOM"
     },
-    {
-        id: 11,
-        tag: "BEDROOM"
-    },
+    // {
+    //     id: 11,
+    //     tag: "BEDROOM"
+    // },
     {
         id: 3,
         tag: "LIVING"
@@ -25,10 +25,10 @@ const tagList = [
         id: 4,
         tag: "DINING"
     },
-    {
-        id: 5,
-        tag: "ENTRYWAY"
-    },
+    // {
+    //     id: 5,
+    //     tag: "ENTRYWAY"
+    // },
     {
         id: 6,
         tag: "OFFICE"
