@@ -186,20 +186,12 @@ a {
   background-color: white;
 }
 
-.space {
-  padding: 10px;
-}
 
 .header {
   margin: 25px;
   font-size: 28px;
 }
 
-
-.contain {
-  max-width: 1000px;
-  margin: auto;
-}
 
 /* Extra small devices (phones) */
 @media (max-width: 575.98px) {
@@ -223,7 +215,7 @@ a {
     max-width: 900px;
     margin: auto;
   }
-}
+} 
 
 /* Large devices (desktops) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -231,7 +223,7 @@ a {
     max-width: 1000px;
     margin: auto;
   }
-}
+} 
 
 /* Extra large devices (large desktops) */
 @media (min-width: 1200px) {
