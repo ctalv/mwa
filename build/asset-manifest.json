@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mwa/build/static/css/main.8845f54e.css",
-    "main.js": "/mwa/build/static/js/main.6905b641.js",
+    "main.css": "/mwa/build/static/css/main.f571f539.css",
+    "main.js": "/mwa/build/static/js/main.667481a4.js",
     "static/js/453.1f35141a.chunk.js": "/mwa/build/static/js/453.1f35141a.chunk.js",
     "static/media/Michael Hunter 2-23.JPG": "/mwa/build/static/media/Michael Hunter 2-23.b4bb669957a90f96a6c3.JPG",
     "static/media/Michael Hunter -2-2.JPG": "/mwa/build/static/media/Michael Hunter -2-2.7c93d68c5267b83bbbae.JPG",
@@ -155,7 +155,6 @@
     "static/media/Screenshot 2025-01-08 at 3.19.01 PM.png": "/mwa/build/static/media/Screenshot 2025-01-08 at 3.19.01 PM.8ffad313ef556a59ef08.png",
     "static/media/SunsetFinal-9.jpg": "/mwa/build/static/media/SunsetFinal-9.5e8c23335bbf5b9b70f6.jpg",
     "static/media/Screenshot 2025-01-08 at 3.22.25 PM.png": "/mwa/build/static/media/Screenshot 2025-01-08 at 3.22.25 PM.3c00f8638674244c3127.png",
-    "static/media/IMG_6924.jpeg": "/mwa/build/static/media/IMG_6924.44f812da952197109216.jpeg",
     "static/media/Albans 2426 Kitchen Remodel 2.jpg": "/mwa/build/static/media/Albans 2426 Kitchen Remodel 2.65850f8f3f1d0fb141bd.jpg",
     "static/media/RachelAlysePhotographyTheOwenGroupChristmas-28.jpg": "/mwa/build/static/media/RachelAlysePhotographyTheOwenGroupChristmas-28.c3a56ff4ee4264256324.jpg",
     "static/media/Albans 2426 Kitchen Remodel.jpg": "/mwa/build/static/media/Albans 2426 Kitchen Remodel.4aeb6b5ccc5185057f0c.jpg",
@@ -171,6 +170,7 @@
     "static/media/SunsetFinal-5.jpg": "/mwa/build/static/media/SunsetFinal-5.5e12eae844215291cad4.jpg",
     "static/media/RachelAlysePhotographyTheOwenGroupChristmas-5.jpg": "/mwa/build/static/media/RachelAlysePhotographyTheOwenGroupChristmas-5.2e35df8cf3caffc03c63.jpg",
     "static/media/RachelAlysePhotographyTheOwenGroupChristmas-39.jpg": "/mwa/build/static/media/RachelAlysePhotographyTheOwenGroupChristmas-39.a24259f9677d8f9dbaac.jpg",
+    "static/media/team-photo.jpg": "/mwa/build/static/media/team-photo.f6461b80fecb96b06e0d.jpg",
     "static/media/RachelAlysePhotographyTheOwenGroupChristmas-4.jpg": "/mwa/build/static/media/RachelAlysePhotographyTheOwenGroupChristmas-4.55bee29a491bb8d39819.jpg",
     "static/media/RachelAlysePhotographyTheOwenGroupChristmas-15.jpg": "/mwa/build/static/media/RachelAlysePhotographyTheOwenGroupChristmas-15.69e683d0b100b177626e.jpg",
     "static/media/RachelAlysePhotographyTheOwenGroupChristmas-23.jpg": "/mwa/build/static/media/RachelAlysePhotographyTheOwenGroupChristmas-23.48cb0c1a5eee3bfdb721.jpg",
@@ -198,18 +198,24 @@
     "static/media/img-6.jpeg": "/mwa/build/static/media/img-6.fb40f564800c3634a058.jpeg",
     "static/media/img-20.jpeg": "/mwa/build/static/media/img-20.30786c4bb8ae30f2190e.jpeg",
     "static/media/img-7.jpeg": "/mwa/build/static/media/img-7.60bda7109ed3f02aeefe.jpeg",
-    "static/media/MWA-main-logo-saddle.png": "/mwa/build/static/media/MWA-main-logo-saddle.af916f986a21a9abbd6b.png",
+    "static/media/MWA-logomark-night.png": "/mwa/build/static/media/MWA-logomark-night.c926f0f1537f2d244894.png",
+    "static/media/MWA-logomark-cognac.png": "/mwa/build/static/media/MWA-logomark-cognac.f6f87790733396961e47.png",
+    "static/media/MWA-logotype-cognac.png": "/mwa/build/static/media/MWA-logotype-cognac.9bcfed2cf239735b0313.png",
+    "static/media/MWA-logotype-night.png": "/mwa/build/static/media/MWA-logotype-night.b5936f1034d101177fbe.png",
     "static/media/MWA-logomark-saddle.png": "/mwa/build/static/media/MWA-logomark-saddle.306c19ff31e6898be382.png",
+    "static/media/MWA-logomark-forest.png": "/mwa/build/static/media/MWA-logomark-forest.f79407801907dbe4011d.png",
+    "static/media/MWA-logotype-saddle.png": "/mwa/build/static/media/MWA-logotype-saddle.b9864ee4305d05133e97.png",
+    "static/media/MWA-logotype-forest.png": "/mwa/build/static/media/MWA-logotype-forest.121807213b8598973c2c.png",
     "static/media/revicons.eot": "/mwa/build/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/revicons.ttf": "/mwa/build/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/mwa/build/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/mwa/build/index.html",
-    "main.8845f54e.css.map": "/mwa/build/static/css/main.8845f54e.css.map",
-    "main.6905b641.js.map": "/mwa/build/static/js/main.6905b641.js.map",
+    "main.f571f539.css.map": "/mwa/build/static/css/main.f571f539.css.map",
+    "main.667481a4.js.map": "/mwa/build/static/js/main.667481a4.js.map",
     "453.1f35141a.chunk.js.map": "/mwa/build/static/js/453.1f35141a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8845f54e.css",
-    "static/js/main.6905b641.js"
+    "static/css/main.f571f539.css",
+    "static/js/main.667481a4.js"
   ]
 }
