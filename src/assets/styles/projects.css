@@ -9,6 +9,7 @@
 
 .project {
     position: relative;
+    padding: 10px 0px;
 }
 
 .project-photo {
@@ -17,11 +18,7 @@
     object-fit: cover;
 }
 
-.tags {
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-}
+
 
 .project-image {
     display: block;

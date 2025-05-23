@@ -31,13 +31,13 @@ function topFunction() {
 
     return (
         <main>
-            <div className="projects">
+            <div className="projects contain">
                 <h2 className="text-center">{project.project}</h2>
                 <p className="text-center">{project.description}</p>
-                <div className="container">
+                <div className="">
                     <div className="gallery text-center">
                         {images.map(item => (
-                            <div className="project row space">
+                            <div className="project">
                                 <img className="project-image" src={item.image} alt={item.alt} />
                             </div>
                         ))}
