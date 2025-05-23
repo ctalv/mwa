@@ -23,8 +23,7 @@ nav {
     align-items: center;
     padding: 10px;
     /* position: relative; */
-    background-color: var(--saddle15);
-    color: var(--saddle);
+
     z-index: 2;
     font-family: 'Times New Roman', Times, serif;
 }

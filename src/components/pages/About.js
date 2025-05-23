@@ -13,7 +13,7 @@ function About() {
     const people = itemLists.about
     return (
         <main>
-            <div className="about">
+            <div className="about contain color-about">
                 <h2 className="text-center header">ABOUT US</h2>
                 <div className="general container">
                     <p>

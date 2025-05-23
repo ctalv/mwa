@@ -48,7 +48,7 @@ function Home() {
     };
 
     return (
-        <div className="homepage">
+        <div className="homepage color-home">
             <Carousel className="carousel-react slide carousel-fit" fade controls={false} indicators={false}>
                 {itemLists.homeImages.map((item, index) => (
                     <Carousel.Item className="carousel-item">

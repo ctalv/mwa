@@ -77,7 +77,6 @@ footer {
 .footerbottom {
   text-align: center;
   max-width: vw;
-  background-color: var(--saddle15); /* Darker color for footer bottom */
   padding: 10px 0;
   /* position: absolute; */
   bottom: 0;

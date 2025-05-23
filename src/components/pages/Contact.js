@@ -9,7 +9,7 @@ function Contact() {
 
     return (
         <main>
-            <div className="contact-us-page container ">
+            <div className="contact-us-page container color-contact">
                 <div className="row">
                     <div className="col-4">
                         <img className="contact-us-img" src={contactImage}

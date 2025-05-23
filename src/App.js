@@ -21,8 +21,10 @@ function App () {
     
 
     return (
-        <div>
-            <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
+        <Container >
+            {(pageColor, pageBGColor, pageLogoMark, pageLogoType) => (
+                <>
+            <Navbar currentPage={currentPage} handlePageChange={handlePageChange} pageColor={pageColor} pageBGColor={pageBGColor} pageLogoMark={pageLogoMark} pageLogoType={pageLogoType}/>
             
 
             <Routes>
@@ -33,9 +35,10 @@ function App () {
                 <Route path="/projects/:tagId" element={<Projects />} />
                 <Route path="/project/:title" element={<SingleProject />} />
             </Routes>
-            <Footer currentPage={currentPage} handlePageChange={handlePageChange} />
-            
-        </div>
+            <Footer currentPage={currentPage} handlePageChange={handlePageChange} pageColor={pageColor} pageBGColor={pageBGColor} pageLogoMark={pageLogoMark} pageLogoType={pageLogoType}/>
+            </>
+            )}
+        </Container>
     );
 
 };

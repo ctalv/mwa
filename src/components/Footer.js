@@ -1,21 +1,21 @@
 import React from "react";
 import "../assets/styles/footer.css";
-import mainLogo from "../assets/images/MWA-main-logo-saddle.png"
-import logomark from "../assets/images/MWA-logomark-saddle.png"
+import mainLogo from "../assets/images/logos/MWA-main-logo-saddle.png"
+import logomark from "../assets/images/logos/MWA-logomark-saddle.png"
 import instagram from "../assets/images/Instagram_icon.png"
 import linkedin from "../assets/images/LI-In-Bug.png"
 import { Link } from "react-router-dom";
 
 
 
-function Footer({ currentPage, handlePageChange }) {
+function Footer({ currentPage, handlePageChange, pageColor, pageBGColor }) {
   function clickNavEvent(page) {
     handlePageChange(page)
     // var checkbox = document.querySelector('.check');
     // checkbox.checked = false;
   }
   return (
-    <footer className="">
+    <footer className={`${pageColor}`}>
       <div className="contain d-flex justify-content-around">
         <div className="footerleft">
           <div className="footerlogodiv">
@@ -88,7 +88,7 @@ function Footer({ currentPage, handlePageChange }) {
         </div>
       </div>
 
-      <div className="footerbottom">
+      <div className={`footerbottom ${pageBGColor}`} >
         Website by Claire Alverson
       </div>
 

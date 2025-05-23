@@ -1,19 +1,18 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 import "../assets/styles/navbar.css";
-import logomarkSaddle from "../assets/images/MWA-logomark-saddle.png";
-import logomarkMain from "../assets/images/MWA-main-logo-saddle.png";
-import logotypeSaddle from "../assets/images/MWA-logotype-saddle.png";
+
+
 import { Link } from "react-router-dom";
 
-function Navbar({ currentPage, handlePageChange }) {
-  function clickNavEvent (page)  {
+function Navbar({ currentPage, handlePageChange, pageColor, pageBGColor, pageLogoMark, pageLogoType }) {
+  
+  function clickNavEvent(page) {
     handlePageChange(page)
-    // var checkbox = document.querySelector('.check');
-    // checkbox.checked = false;
   }
+  
   return (
-    <nav>
-      
+    <nav className={`nav ${pageBGColor}`}>
+
       <menu className="d-flex justify-content-around">
         <li className="navitem">
           <Link
@@ -21,7 +20,7 @@ function Navbar({ currentPage, handlePageChange }) {
             onClick={() => clickNavEvent('Home')}
             // This is a conditional (ternary) operator that checks to see if the current page is "Home"
             // If it is, we set the current page to 'nav-link-active', otherwise we set it to 'nav-link'
-            className={currentPage === 'Home' ? 'nav-link padding-nav active' : 'nav-link padding-nav'}
+            className={`nav-link padding-nav ${pageColor}`}
           >
             HOME
           </Link>
@@ -33,25 +32,25 @@ function Navbar({ currentPage, handlePageChange }) {
             onClick={() => clickNavEvent('Projects')}
             // This is a conditional (ternary) operator that checks to see if the current page is "Home"
             // If it is, we set the current page to 'nav-link-active', otherwise we set it to 'nav-link'
-            className={currentPage === 'Projects' ? 'nav-link padding-nav active' : 'nav-link padding-nav'}
+            className={`nav-link padding-nav ${pageColor}`}
           >
             GALLERY
           </Link></li>
         <li className="navitem">
-            <Link className="navlogo" to="/">
-<div className="navlogo" >
-        <img className="navlogomark" src={logomarkSaddle} alt="Splash image placeholder" priority />
-        <img className="navlogotype" src={logotypeSaddle} alt="Splash image placeholder" priority />
-      </div>
-      </Link>
-          </li>
+          <Link className="navlogo" to="/">
+            <div className="navlogo" >
+              <img className="navlogomark" src={`${pageLogoMark}`} alt="Splash image placeholder" priority />
+              <img className="navlogotype" src={`${pageLogoType}`} alt="Splash image placeholder" priority />
+            </div>
+          </Link>
+        </li>
         <li className="navitem">
           <Link
             to="about"
             onClick={() => clickNavEvent('About')}
             // This is a conditional (ternary) operator that checks to see if the current page is "Home"
             // If it is, we set the current page to 'nav-link-active', otherwise we set it to 'nav-link'
-            className={currentPage === 'About' ? 'nav-link active padding-nav' : 'nav-link padding-nav'}
+            className={`nav-link padding-nav ${pageColor}`}
           >ABOUT
           </Link></li>
         <li className="navitem">
@@ -60,7 +59,7 @@ function Navbar({ currentPage, handlePageChange }) {
             onClick={() => clickNavEvent('Contact')}
             // This is a conditional (ternary) operator that checks to see if the current page is "Home"
             // If it is, we set the current page to 'nav-link-active', otherwise we set it to 'nav-link'
-            className={currentPage === 'Contact' ? 'nav-link active padding-nav' : 'nav-link padding-nav'}
+            className={`nav-link padding-nav ${pageColor}`}
           >CONTACT
           </Link></li>
       </menu>

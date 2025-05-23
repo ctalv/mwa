@@ -20,7 +20,7 @@ function Projects() {
 
     return (
         <main>
-            <div className="projects">
+            <div className="projects color-projects">
                 <h2 className="text-center header">GALLERY</h2>
 
                 <div className="container">
@@ -33,8 +33,7 @@ function Projects() {
 
                                             <button className="myButton"
                                                 style={{
-                                                    // backgroundColor: Number(tagId) === item.id ? '#0b4050' : '',
-                                                    color: Number(tagId) === item.id ? '#2e2c1b' : '#8b6127',
+                                                    textDecoration: Number(tagId) === item.id ? '#underline' : '#0b4050',
                                                 }}>
                                                 {item.tag}
                                             </button>
