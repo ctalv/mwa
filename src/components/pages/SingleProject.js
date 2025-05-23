@@ -16,6 +16,19 @@ function topFunction() {
     const index = itemLists.projects.findIndex(item => item.project === title)
     const project = itemLists.projects[index]
     const images = itemLists.images.filter(item => item.project === title)
+    function backward(index) {
+        if (index > 0) {
+            return <Link onClick={topFunction()} to={`/project/${itemLists.projects[index-1].project}`}>Previous</Link>;
+        }
+        return <div></div>;
+    }
+    function forward(index) {
+        if (index < itemLists.projects.length) {
+            return <Link onClick={topFunction()} to={`/project/${itemLists.projects[index+1].project}`}>Forward</Link>;
+        }
+        return <div></div>;
+    }
+
     return (
         <main>
             <div className="projects">
@@ -39,12 +52,8 @@ function topFunction() {
                         <h4>{project.contributors.photography}</h4>
                     </div>
                     <div className="d-flex justify-content-between">
-                        <Link onClick={topFunction()} to={`/project/${itemLists.projects[index-1].project}`}>
-                            Previous
-                        </Link>
-                        <Link onClick={topFunction()} to={`/project/${itemLists.projects[index+1].project}`}>
-                            Next
-                        </Link>
+                        {backward(index)}
+                        {forward(index)}
                     </div>
                 </div>
             </div>
