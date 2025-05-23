@@ -56,7 +56,7 @@ function Home() {
                     </Carousel.Item>
                 ))}
             </Carousel>
-            <div className="description container my-5">
+            {/* <div className="description container my-5">
                 <p>
                     This is where you can write everything about how cool you are.
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -65,7 +65,7 @@ function Home() {
                     pariatur.
                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
-            </div>
+            </div> */}
             {/* <div className="container my-5">
                 <div className="tags  d-flex flex-wrap">
                     {itemLists.tags.map(item => (

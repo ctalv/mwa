@@ -14,7 +14,7 @@ function About() {
     return (
         <main>
             <div className="about contain color-about">
-                <h2 className="text-center header">ABOUT US</h2>
+                <h2 className="header">ABOUT US</h2>
                 <div className="general container">
                     <p>
                         Need some values, the kind of work you do, maybe a few pictures. Note to self: we can also do like a gallery
@@ -29,11 +29,11 @@ function About() {
                     {people.map(person => (
                         <div className="profile " >
                             <img className="headshot " src={person.headshot} alt="headshot" />
-                            <div className="titles">
+                            <div className="titles bg-color-about color-about">
                                 <h3 className="person-name">{person.name}</h3>
                                 <h3 className="person-title">{person.title}</h3>
                             </div>
-                            <div className="description">{person.description}</div>
+                            <div className="description bg-color-about">{person.description}</div>
                         </div>
                     ))}
                             

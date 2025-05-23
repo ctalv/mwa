@@ -33,7 +33,7 @@ function Projects() {
 
                                             <button className="myButton"
                                                 style={{
-                                                    textDecoration: Number(tagId) === item.id ? '#underline' : '#0b4050',
+                                                    textDecoration: Number(tagId) === item.id ? 'underline' : 'none',
                                                 }}>
                                                 {item.tag}
                                             </button>

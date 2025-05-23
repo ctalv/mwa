@@ -32,7 +32,7 @@ function topFunction() {
     return (
         <main>
             <div className="projects contain">
-                <h2 className="text-center">{project.project}</h2>
+                <h2 className="text-center header">{project.project}</h2>
                 <p className="text-center">{project.description}</p>
                 <div className="">
                     <div className="gallery text-center">
@@ -42,7 +42,10 @@ function topFunction() {
                             </div>
                         ))}
                     </div>
-                    <div>
+                    
+                    <div className="d-flex justify-content-between align-items-center">
+                        {backward(index)}
+                        <div>
                         <h3>PROJECT TEAM:</h3>
                         <h3>Architect</h3>
                         <h4>{project.contributors.architects}</h4>
@@ -51,8 +54,6 @@ function topFunction() {
                         <h3>Photography</h3>
                         <h4>{project.contributors.photography}</h4>
                     </div>
-                    <div className="d-flex justify-content-between">
-                        {backward(index)}
                         {forward(index)}
                     </div>
                 </div>

@@ -1,14 +1,12 @@
 import React from "react";
 import "../assets/styles/footer.css";
-import mainLogo from "../assets/images/logos/MWA-main-logo-saddle.png"
-import logomark from "../assets/images/logos/MWA-logomark-saddle.png"
 import instagram from "../assets/images/Instagram_icon.png"
 import linkedin from "../assets/images/LI-In-Bug.png"
 import { Link } from "react-router-dom";
 
 
 
-function Footer({ currentPage, handlePageChange, pageColor, pageBGColor }) {
+function Footer({ currentPage, handlePageChange, pageColor, pageBGColor, pageLogoMark }) {
   function clickNavEvent(page) {
     handlePageChange(page)
     // var checkbox = document.querySelector('.check');
@@ -16,10 +14,10 @@ function Footer({ currentPage, handlePageChange, pageColor, pageBGColor }) {
   }
   return (
     <footer className={`${pageColor}`}>
-      <div className="contain d-flex justify-content-around">
+      <div className="contain d-flex justify-content-between">
         <div className="footerleft">
           <div className="footerlogodiv">
-            <a href="/"><img className="footerlogo" src={logomark} alt="Mitchell Wilson Main Logo"
+            <a href="/"><img className="footerlogo" src={pageLogoMark} alt="Mitchell Wilson Main Logo"
               priority />
             </a>
           </div>
