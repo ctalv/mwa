@@ -24,7 +24,7 @@ function topFunction() {
     }
     function forward(index) {
         if (index < itemLists.projects.length) {
-            return <Link onClick={topFunction()} to={`/project/${itemLists.projects[index+1].project}`}>Forward</Link>;
+            return <Link onClick={topFunction()} to={`/project/${itemLists.projects[index+1].project}`}>Next</Link>;
         }
         return <div></div>;
     }

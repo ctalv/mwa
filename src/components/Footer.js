@@ -35,7 +35,7 @@ function Footer({ currentPage, handlePageChange, pageColor, pageBGColor, pageLog
               onClick={() => clickNavEvent('Home')}
               className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
             >
-              Home
+              HOME
             </Link>
           </li>
 
@@ -45,21 +45,21 @@ function Footer({ currentPage, handlePageChange, pageColor, pageBGColor, pageLog
               onClick={() => clickNavEvent('Projects')}
               className={currentPage === 'Projects' ? 'nav-link active' : 'nav-link'}
             >
-              Projects
+              GALLERY
             </Link></li>
           <li className="mininavitem">
             <Link
               to="about"
               onClick={() => clickNavEvent('About')}
               className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
-            >About
+            >ABOUT
             </Link></li>
           <li className="mininavitem">
             <Link
               to="contact"
               onClick={() => clickNavEvent('Contact')}
               className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
-            >Contact
+            >CONTACT
             </Link></li>
         </div>
         <div>
