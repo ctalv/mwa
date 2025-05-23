@@ -20,21 +20,20 @@ function Projects() {
 
     return (
         <main>
-            <div className="projects">
-                <h2 className="text-center">GALLERY</h2>
+            <div className="projects color-projects">
+                <h2 className="text-center header">GALLERY</h2>
 
                 <div className="container">
                     <div className="gallery text-center row">
-                        <div className="tags">
-                            <h3>Show:</h3>
-                            <div className="tags d-flex flex-wrap">
+                        <div className="d-flex justify-content-center">
+                            <div className="tags d-flex flex-wrap justify-content-center">
                                 {itemLists.tags.map(item => (
                                     <div className="">
                                         <Link to={`/projects/${item.id}`} >
 
                                             <button className="myButton"
                                                 style={{
-                                                    backgroundColor: Number(tagId) === item.id ? '#0b4050' : '#2e2c1b',
+                                                    textDecoration: Number(tagId) === item.id ? 'underline' : 'none',
                                                 }}>
                                                 {item.tag}
                                             </button>
@@ -44,7 +43,7 @@ function Projects() {
                                 <div>
                                     <Link to="/projects" >
                                         <button className="myButton">
-                                            Clear
+                                            CLEAR
                                         </button>
                                     </Link>
 
@@ -53,13 +52,13 @@ function Projects() {
                         </div>
 
                         {sortList.map(item => (
-                            <div className="project col">
-                                <Link to={`/project/${item.project}`}>
+                            // <div className="project col">
+                                <Link className="project col" to={`/project/${item.project}`}>
                                     <img className="project-photo col" src={item.image}
                                         alt={item.alt} />
-                                    <h3>{item.project}</h3>
+                                    <h3 className="project-title">{item.project}</h3>
                                 </Link>
-                            </div>
+                            // </div>
                         ))}
                     </div>
                 </div>

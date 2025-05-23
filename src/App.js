@@ -6,6 +6,7 @@ import About from '../src/components/pages/About';
 import Home from '../src/components/pages/Home';
 import Contact from '../src/components/pages/Contact';
 import Projects from '../src/components/pages/Projects';
+import Container from "./components/pages/Container";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./assets/styles/globals.css"
@@ -20,8 +21,12 @@ function App () {
     
 
     return (
-        <div>
-            <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
+        <Container >
+            {(pageColor, pageBGColor, pageLogoMark, pageLogoType) => (
+                <>
+            <Navbar currentPage={currentPage} handlePageChange={handlePageChange} pageColor={pageColor} pageBGColor={pageBGColor} pageLogoMark={pageLogoMark} pageLogoType={pageLogoType}/>
+            
+
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
@@ -30,8 +35,10 @@ function App () {
                 <Route path="/projects/:tagId" element={<Projects />} />
                 <Route path="/project/:title" element={<SingleProject />} />
             </Routes>
-            <Footer currentPage={currentPage} handlePageChange={handlePageChange} />
-        </div>
+            <Footer currentPage={currentPage} handlePageChange={handlePageChange} pageColor={pageColor} pageBGColor={pageBGColor} pageLogoMark={pageLogoMark} pageLogoType={pageLogoType}/>
+            </>
+            )}
+        </Container>
     );
 
 };

@@ -1,61 +1,54 @@
-/* nav {
-    display: flex;
-    justify-content: space-between;
+nav {
+    display: block !important;
+    text-align: center;
+} 
 
-    color: black;
-    background-color: var(--saddle15);
-    position: fixed;
-    z-index: 10;
-    /* margin: 10px; 
-    max-height: 70px;
-    width: 100%;
-} */
+menu {
+vertical-align: bottom;
+
+}
 
 .navbar {
-    color: black;
     display: flex;
     top: 0;
     position: sticky;
-    align-items: center;
+    /* align-items: center; */
     width: 100%;
     margin: auto;
 }
 
-
-
-/* .navlogo {
-    width: 50px;
-    height: 50px;
-    margin: 5px 5px;
-} */
-
-/* .navlogo,
-.hamburger {
-    margin: 5px 10px;
-
-    align-items: center;
-    justify-content: center;
-    z-index: 11;
-} */
-
-
 nav {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     padding: 10px;
     /* position: relative; */
-    background-color: var(--saddle15);
-    z-index: 2;
 
+    z-index: 2;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 /* Centering the navlogo */
 .navlogo {
     margin: 0 auto;
-    max-width: 150px;
+    max-width: 300px;
     /* Adjust the size of the logo */
 }
+
+.navlogomark {
+    margin: 0 auto;
+    max-width: 50px;
+    padding-bottom: 10px;
+    /* Adjust the size of the logo */
+}
+
+.navlogotype {
+    margin: 0 auto;
+    max-width: 300px;
+    /* Adjust the size of the logo */
+}
+
+
 
 /* Styling for the hamburger menu */
 .hamburger {
@@ -76,14 +69,16 @@ nav {
 }
 
 .navitem {
-    font-size: 50px;
+    font-size: 25px;
     list-style: none;
-
 }
 
 
+.padding-nav {
+    padding-top: 57px !important;  
 
-
+}
+/* 
 .hamburger:has(input:checked) {
     --foreground: var(--saddle15);
     --background: var(--saddle);
@@ -155,3 +150,4 @@ nav {
 .hamburger:has(input:checked)+.navlist {
     translate: 0 0;
 }
+ */

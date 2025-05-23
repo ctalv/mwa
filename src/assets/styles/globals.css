@@ -91,6 +91,8 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  /* color: var(--saddle); */
+
 }
 
 
@@ -99,12 +101,21 @@ body {
   --saddle-dark: #684816;
   --saddle35: #D6C8B3;
   --saddle15: #EEE7DF;
+
   --night: #0b4050;
   --night-dark: #002c3a;
+  --night35: #a9bcc2;
+  --night15: #DAE2E5;
+
   --cognac: #6b0c0e;
   --cognac-dark: #590000;
+  --cognac35: #CBAAAA;
+  --cognac15: #E9DADB;
+
   --forest: #2e2c1b;
   --forest-dark: #201f0c;
+  --forest35: #B6B5AF;
+  --forest15: #E0DFDD;
 
   --bar-width: 60px;
   --bar-height: 8px;
@@ -117,10 +128,10 @@ body {
 html,
 body {
   max-width: 100vw;
-  width:100%;
+  width: 100%;
   /* height:100%; */
   overflow-x: hidden;
-} 
+}
 
 
 h1,
@@ -128,7 +139,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "sole-serif-titling-variable",serif;
+  font-family: "sole-serif-titling-variable", serif;
   font-variation-settings: 'wght' 200, 'opsz' 0;
 }
 
@@ -157,10 +168,6 @@ a {
 }
 
 
-
-
-
-
 .full_page_img {
   width: 100%;
   height: 100%;
@@ -173,12 +180,89 @@ a {
 .myButton {
   margin: 5px;
   padding: 10px;
-  color: white;
+  /* color: var(--saddle-dark); */
   border: none;
   border-radius: 4px;
-  background-color: var(--forest);
+  background-color: white;
 }
 
-.space {
-  padding: 10px;
+
+.header {
+  margin: 25px;
+  font-size: 28px;
+  text-align: center;
+}
+
+
+/* Extra small devices (phones) */
+@media (max-width: 575.98px) {
+  .contain {
+    max-width: 575.98px;
+    margin: auto;
+  }
+}
+
+/* Small devices (landscape phones) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .contain {
+    max-width: 700px;
+    margin: auto;
+  }
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .contain {
+    max-width: 900px;
+    margin: auto;
+  }
+} 
+
+/* Large devices (desktops) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .contain {
+    max-width: 1000px;
+    margin: auto;
+  }
+} 
+
+/* Extra large devices (large desktops) */
+@media (min-width: 1200px) {
+  .contain {
+    max-width: 1100px;
+    margin: auto;
+  }
+}
+
+
+.color-home {
+  color: var(--saddle) !important;
+}
+
+.bg-color-home {
+  background-color: var(--saddle15);
+}
+
+.color-projects {
+  color: var(--night) !important;
+}
+
+.bg-color-projects {
+  background-color: var(--night15);
+}
+
+.color-about {
+  color: var(--cognac) !important;
+}
+
+.bg-color-about {
+  background-color: var(--cognac15);
+}
+
+.color-contact {
+  color: var(--forest) !important;
+}
+
+.bg-color-contact {
+  background-color: var(--forest15);
 }
