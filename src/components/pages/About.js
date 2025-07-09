@@ -23,7 +23,7 @@ function About() {
                                 <h3 className="person-name">{person.name}</h3>
                                 <h3 className="person-title">{person.title}</h3>
                             </div>
-                            <div className="description bg-color-about">{person.description}</div>
+                            {/* <div className="description bg-color-about">{person.description}</div> */}
                         </div>
 
                 
@@ -31,13 +31,13 @@ function About() {
         }else{
             return (
                 <div className="associate col-3 profile">
-                            <img className="headshot h-50" src={person.headshot} alt="headshot" />
-                            <div className="titles bg-color-about color-about">
-                                <h3 className="person-name">{person.name}</h3>
-                                <h3 className="person-title">{person.title}</h3>
-                            </div>
-                            <div className="description bg-color-about">{person.description}</div>
-                        </div>
+                    <img className="headshot" src={person.headshot} alt="headshot" />
+                    <div className="titles bg-color-about color-about">
+                        <h3 className="person-name">{person.name}</h3>
+                        <h3 className="person-title">{person.title}</h3>
+                    </div>
+                    {/* <div className="description bg-color-about">{person.description}</div> */}
+                </div>
 
                 
             )
