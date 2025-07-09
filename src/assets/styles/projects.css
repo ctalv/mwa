@@ -10,27 +10,23 @@
 
 .project {
     position: relative;
-    padding: 10px 0px;
+    /* padding: 10px 0px; */
+    padding: var(--bs-column-padding);
+    padding: calc(var(--bs-gutter-x) * .5);
+    
 }
 
 .project-photo {
+    width: 100%;
     height: 300px;
-    width: 400px;
     object-fit: cover;
 }
 
 
-
-.project-image {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
 .project-title {
     width: 400px;
     position: absolute;
-    bottom: 0%;
+    bottom: 3%;
     left: 50%;
     transform: translate(-50%);
 /* color: var(--saddle-dark); */

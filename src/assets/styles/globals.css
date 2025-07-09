@@ -125,6 +125,7 @@ body {
   --hamburger-height: calc((var(--bar-height) *3 + var(--hamburger-gap) *4));
 
   --margin-header: 25px;
+  --bs-column-padding: calc(var(--bs-gutter-x) * .5);
 }
 
 html,
