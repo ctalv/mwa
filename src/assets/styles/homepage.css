@@ -19,6 +19,8 @@
 
 .tags {
   display: flex;
+  margin-top: 0px;
+  margin-bottom: var(--margin-header);
 }
 
 

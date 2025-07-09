@@ -123,6 +123,8 @@ body {
   --hamburger-margin: 8px;
   --animation-timing: 200ms ease-in-out;
   --hamburger-height: calc((var(--bar-height) *3 + var(--hamburger-gap) *4));
+
+  --margin-header: 25px;
 }
 
 html,
@@ -188,10 +190,11 @@ a {
 
 
 .header {
-  margin: 25px;
+  margin: var(--margin-header);
   font-size: 28px;
   text-align: center;
 }
+
 
 
 /* Extra small devices (phones) */
