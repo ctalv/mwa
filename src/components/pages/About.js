@@ -23,7 +23,7 @@ function About() {
                                 <h3 className="person-name">{person.name}</h3>
                                 <h3 className="person-title">{person.title}</h3>
                             </div>
-                            {/* <div className="description bg-color-about">{person.description}</div> */}
+                            <div className="description bg-color-about">{person.description}</div>
                         </div>
 
                 
@@ -36,7 +36,7 @@ function About() {
                         <h3 className="person-name">{person.name}</h3>
                         <h3 className="person-title">{person.title}</h3>
                     </div>
-                    {/* <div className="description bg-color-about">{person.description}</div> */}
+                    <div className="description bg-color-about">{person.description}</div>
                 </div>
 
                 

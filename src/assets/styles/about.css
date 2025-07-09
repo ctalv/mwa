@@ -18,6 +18,7 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
+  position: relative;
 }
 
 .titles {
@@ -59,16 +60,18 @@
 
 .description {
   position:absolute;
-  top: 50%; /* Position at vertical center */
-  left: 50%; /* Position at horizontal center */
-  transform: translate(-50%, -50%); /* Center the text precisely */
-    /* height: 100%; */
-    width: 100%;
-    /* object-fit: cover; */
+  top: 0; /* Positions the overlay at the top edge of the container */
+  left: 0; /* Positions the overlay at the left edge of the container */
+  right: 0; /* Positions the overlay at the right edge of the container */
+  bottom: 0; 
+  margin: calc(var(--bs-gutter-x) * .5);
+  visibility: hidden;
 }
 
 .profile:hover .description {
   opacity: 0.7;
+  visibility: visible;
+  z-index: 3;
 }
 
 
