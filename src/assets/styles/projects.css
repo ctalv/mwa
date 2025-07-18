@@ -1,19 +1,11 @@
 .projects{
     color: var(--saddle);
-    /* font: optional; */
     font-family: 'Times New Roman', Times, serif;
     font-size: large;
-    /* font-weight: 200; */
-    /* fon */
-    
 }
 
 .project {
     position: relative;
-    /* padding: 10px 0px; */
-    /* padding: var(--bs-column-padding);
-    padding: calc(var(--bs-gutter-x) * .5); */
-    
 }
 
 .project-photo {
@@ -25,21 +17,13 @@
 
 .project-title {
     position: relative;
-    /* top: 50%; */
-    /* left: 50%; */
-    /* transform:translate(-50%); */
-
     width: 100%;
-
-    /* position: absolute; */
     bottom: 10%;
-    /* left: 50%; */
-    /* transform: translate(-50%); */
     background-color: var(--night15);
     opacity: 0.7;
-    /* left: 50%; */
-  /* top: 50%;
-  left: 50%; */
-  /* transform: translate(0%, -110%);
-  color: var(--saddle15); */
+}
+
+.project-image {
+    width: 100%;
+    padding-top: 10px;
 }
