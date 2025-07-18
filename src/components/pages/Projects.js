@@ -24,7 +24,7 @@ function Projects() {
                 <h2 className="text-center header">GALLERY</h2>
 
                 <div className="container">
-                    <div className="gallery text-center row">
+                    <div className="gallery text-center">
                         <div className="d-flex justify-content-center">
                             <div className="tags d-flex flex-wrap justify-content-center">
                                 {itemLists.tags.map(item => (
@@ -50,16 +50,16 @@ function Projects() {
                                 </div>
                             </div>
                         </div>
-
+                        <div className="row">
                         {sortList.map(item => (
-                            // <div className="project col">
-                                <Link className="project col-4" to={`/project/${item.project}`}>
-                                    <img className="project-photo" src={item.image}
-                                        alt={item.alt} />
-                                    <h3 className="project-title">{item.project}</h3>
-                                </Link>
-                            // </div>
+                            <Link className="project col-4" to={`/project/${item.project}`}>
+                                <img className="project-photo" src={item.image} alt={item.alt} />
+                                <div className="project-title">
+                                    <h3 className="">{item.project}</h3>
+                                </div>
+                            </Link>
                         ))}
+                        </div>
                     </div>
                 </div>
             </div>
