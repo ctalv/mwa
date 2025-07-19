@@ -1,7 +1,3 @@
-nav {
-    display: block !important;
-    text-align: center;
-} 
 
 menu {
 vertical-align: bottom;
@@ -9,7 +5,7 @@ vertical-align: bottom;
 }
 
 .navbar {
-    display: flex;
+    /* display: flex; */
     top: 0;
     position: sticky;
     /* align-items: center; */
@@ -18,11 +14,12 @@ vertical-align: bottom;
 }
 
 nav {
-    display: flex;
+    display: block !important;
     /* justify-content: space-between; */
     align-items: center;
     padding: 10px;
     /* position: relative; */
+    text-align: center;
 
     z-index: 2;
     font-family: 'Times New Roman', Times, serif;
@@ -78,7 +75,9 @@ nav {
     padding-top: 57px !important;  
 
 }
-/* 
+
+
+
 .hamburger:has(input:checked) {
     --foreground: var(--saddle15);
     --background: var(--saddle);
@@ -150,4 +149,4 @@ nav {
 .hamburger:has(input:checked)+.navlist {
     translate: 0 0;
 }
- */
+
