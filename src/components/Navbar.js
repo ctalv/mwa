@@ -17,7 +17,7 @@ const useWindowSize = () => {
     };
 
     window.addEventListener('resize', handleResize);
-    handleResize(); // Call once to set initial size
+    handleResize();
 
     return () => window.removeEventListener('resize', handleResize);
   }, []);
@@ -34,7 +34,7 @@ function Navbar({ currentPage, handlePageChange, pageColor, pageBGColor, pageLog
 
 const { width } = useWindowSize();
 
-  if (width < 768) {
+  if (width < 850) {
     return (
     <nav className={`nav ${pageBGColor}`}>
       <Link className="navlogo" to="/">
@@ -52,8 +52,6 @@ const { width } = useWindowSize();
           <Link
             to="/"
             onClick={() => clickNavEvent('Home')}
-            // This is a conditional (ternary) operator that checks to see if the current page is "Home"
-            // If it is, we set the current page to 'nav-link-active', otherwise we set it to 'nav-link'
             className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
           >
             Home
@@ -64,8 +62,6 @@ const { width } = useWindowSize();
           <Link
             to="projects"
             onClick={() => clickNavEvent('Projects')}
-            // This is a conditional (ternary) operator that checks to see if the current page is "Home"
-            // If it is, we set the current page to 'nav-link-active', otherwise we set it to 'nav-link'
             className={currentPage === 'Projects' ? 'nav-link active' : 'nav-link'}
           >
             Projects
@@ -74,8 +70,6 @@ const { width } = useWindowSize();
           <Link
             to="about"
             onClick={() => clickNavEvent('About')}
-            // This is a conditional (ternary) operator that checks to see if the current page is "Home"
-            // If it is, we set the current page to 'nav-link-active', otherwise we set it to 'nav-link'
             className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
           >About
           </Link></li>
@@ -83,8 +77,6 @@ const { width } = useWindowSize();
           <Link
             to="contact"
             onClick={() => clickNavEvent('Contact')}
-            // This is a conditional (ternary) operator that checks to see if the current page is "Home"
-            // If it is, we set the current page to 'nav-link-active', otherwise we set it to 'nav-link'
             className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
           >Contact
           </Link></li>
@@ -99,8 +91,6 @@ const { width } = useWindowSize();
             <Link
               to="/"
               onClick={() => clickNavEvent('Home')}
-              // This is a conditional (ternary) operator that checks to see if the current page is "Home"
-              // If it is, we set the current page to 'nav-link-active', otherwise we set it to 'nav-link'
               className={`nav-link padding-nav ${pageColor}`}
             >
               HOME
@@ -110,14 +100,12 @@ const { width } = useWindowSize();
             <Link
               to="projects"
               onClick={() => clickNavEvent('Projects')}
-              // This is a conditional (ternary) operator that checks to see if the current page is "Home"
-              // If it is, we set the current page to 'nav-link-active', otherwise we set it to 'nav-link'
               className={`nav-link padding-nav ${pageColor}`}
             >
               GALLERY
             </Link>
           </li>
-          <li className="">
+          <li className="navitem">
             <Link className="navlogo" to="/">
               <div className="navlogo" >
                 <img className="navlogomark" src={`${pageLogoMark}`} alt="Splash image placeholder" priority />
@@ -129,8 +117,6 @@ const { width } = useWindowSize();
             <Link
               to="about"
               onClick={() => clickNavEvent('About')}
-              // This is a conditional (ternary) operator that checks to see if the current page is "Home"
-              // If it is, we set the current page to 'nav-link-active', otherwise we set it to 'nav-link'
               className={`nav-link padding-nav ${pageColor}`}
             >ABOUT
             </Link>
@@ -139,8 +125,6 @@ const { width } = useWindowSize();
             <Link
               to="contact"
               onClick={() => clickNavEvent('Contact')}
-              // This is a conditional (ternary) operator that checks to see if the current page is "Home"
-              // If it is, we set the current page to 'nav-link-active', otherwise we set it to 'nav-link'
               className={`nav-link padding-nav ${pageColor}`}
             >CONTACT
             </Link>

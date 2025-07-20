@@ -4,47 +4,65 @@ vertical-align: bottom;
 
 }
 
-.navbar {
-    /* display: flex; */
-    top: 0;
-    position: sticky;
-    /* align-items: center; */
-    width: 100%;
-    margin: auto;
-}
-
 nav {
-    display: block !important;
-    /* justify-content: space-between; */
     align-items: center;
+    justify-content: center;
     padding: 10px;
-    /* position: relative; */
     text-align: center;
 
     z-index: 2;
     font-family: 'Times New Roman', Times, serif;
 }
 
-/* Centering the navlogo */
-.navlogo {
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    margin: auto;
+}
+
+.navlogo, .navlogomark, .navlogotype {
     margin: 0 auto;
+}
+
+.navlogo, .navlogotype {
     max-width: 300px;
-    /* Adjust the size of the logo */
 }
 
 .navlogomark {
-    margin: 0 auto;
     max-width: 50px;
     padding-bottom: 10px;
-    /* Adjust the size of the logo */
 }
 
-.navlogotype {
-    margin: 0 auto;
-    max-width: 300px;
-    /* Adjust the size of the logo */
+
+@media only screen and (max-width: 850px) {
+    .navlogo,.navlogo, .navlogotype {
+    max-width: 200px;
+    }
+
+    .navlogomark {
+        max-width: 30px;
+        padding-bottom: 7px;
+    }
 }
 
+.navlist {
+    transition: translate var(--animation-timing);
+    translate: 0 -100%;
+    position: absolute;
+
+    display: grid;
+    align-items: center;
+    background-color: var(--saddle15);
+    color: var(--saddle);
+    min-width: 100vw;
+    width: 100%;
+    min-height: 100vh;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+
+}
 
 
 /* Styling for the hamburger menu */
@@ -129,22 +147,7 @@ nav {
     width: 0;
 }
 
-.navlist {
-    transition: translate var(--animation-timing);
-    translate: 0 -100%;
-    position: absolute;
 
-    display: grid;
-    align-items: center;
-    background-color: var(--saddle15);
-    color: var(--saddle);
-    min-width: 100vw;
-    width: 100%;
-    min-height: 100vh;
-    top: 0px;
-    left: 0px;
-
-}
 
 .hamburger:has(input:checked)+.navlist {
     translate: 0 0;
