@@ -1,21 +1,18 @@
 
 menu {
-vertical-align: bottom;
-
+    vertical-align: bottom;
 }
 
 nav {
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    padding: 10px !important;
     text-align: center;
-
     z-index: 2;
     font-family: 'Times New Roman', Times, serif;
 }
 
 .navbar {
-    position: sticky;
     top: 0;
     width: 100%;
     margin: auto;
@@ -37,7 +34,7 @@ nav {
 
 @media only screen and (max-width: 850px) {
     .navlogo,.navlogo, .navlogotype {
-    max-width: 200px;
+        max-width: 200px;
     }
 
     .navlogomark {
@@ -50,7 +47,6 @@ nav {
     transition: translate var(--animation-timing);
     translate: 0 -100%;
     position: absolute;
-
     display: grid;
     align-items: center;
     background-color: var(--saddle15);
@@ -63,6 +59,16 @@ nav {
     z-index: 2;
 
 }
+
+.navitem {
+    font-size: 25px;
+    list-style: none;
+}
+
+.padding-nav {
+    padding-top: 57px !important;  
+}
+
 
 
 /* Styling for the hamburger menu */
@@ -82,19 +88,6 @@ nav {
     cursor: pointer;
 
 }
-
-.navitem {
-    font-size: 25px;
-    list-style: none;
-}
-
-
-.padding-nav {
-    padding-top: 57px !important;  
-
-}
-
-
 
 .hamburger:has(input:checked) {
     --foreground: var(--saddle15);

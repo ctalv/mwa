@@ -52,7 +52,7 @@ function Home() {
             <Carousel className="carousel-react slide carousel-fit" fade controls={false} indicators={false}>
                 {itemLists.homeImages.map((item, index) => (
                     <Carousel.Item className="carousel-item">
-                        <img className="carousel-image d-block  w-100 " src={item.image} alt={item.alt} />
+                        <img className="carousel-image" src={item.image} alt={item.alt} />
                     </Carousel.Item>
                 ))}
             </Carousel>
