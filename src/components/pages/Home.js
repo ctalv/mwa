@@ -48,6 +48,28 @@ function Home() {
     };
 
     return (
+        <>
+        <style>
+            {`
+            .hamburger:has(input:checked) {
+                --foreground: var(--saddle15);
+                --background: var(--saddle);
+            }
+
+            .hamburger:has(input:focus-visible)::before,
+            .hamburger:has(input:focus-visible)::after,
+            .hamburger input:focus-visible {
+                border: 1px solid var(--saddle);
+                box-shadow: 0 0 0 1px var(--saddle15);
+            }
+
+            .hamburger::before,
+            .hamburger::after,
+            .hamburger input {
+                background-color: var(--saddle);
+            }
+            `}
+        </style>
         <div className="homepage color-home">
             <Carousel className="carousel-react slide carousel-fit" fade controls={false} indicators={false}>
                 {itemLists.homeImages.map((item, index) => (
@@ -104,7 +126,7 @@ function Home() {
             <script src={script} />
 
         </div>
-
+    </>
     )
 }
 

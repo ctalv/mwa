@@ -22,9 +22,9 @@ function App () {
 
     return (
         <Container >
-            {(pageColor, pageBGColor, pageLogoMark, pageLogoType) => (
+            {(pageColor, pageBGColor, pageMenuColor, pageLogoMark, pageLogoType) => (
                 <>
-            <Navbar currentPage={currentPage} handlePageChange={handlePageChange} pageColor={pageColor} pageBGColor={pageBGColor} pageLogoMark={pageLogoMark} pageLogoType={pageLogoType}/>
+            <Navbar currentPage={currentPage} handlePageChange={handlePageChange} pageColor={pageColor} pageBGColor={pageBGColor} pageLogoMark={pageLogoMark} pageLogoType={pageLogoType} pageMenuColor={pageMenuColor}/>
             
 
             <Routes>
@@ -35,7 +35,7 @@ function App () {
                 <Route path="/projects/:tagId" element={<Projects />} />
                 <Route path="/project/:title" element={<SingleProject />} />
             </Routes>
-            <Footer currentPage={currentPage} handlePageChange={handlePageChange} pageColor={pageColor} pageBGColor={pageBGColor} pageLogoMark={pageLogoMark} pageLogoType={pageLogoType}/>
+            <Footer currentPage={currentPage} handlePageChange={handlePageChange} pageColor={pageColor} pageBGColor={pageBGColor} pageLogoMark={pageLogoMark} pageLogoType={pageLogoType} pageMenuColor={pageMenuColor}/>
             </>
             )}
         </Container>

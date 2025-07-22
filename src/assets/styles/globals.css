@@ -243,12 +243,20 @@ a {
   color: var(--saddle) !important;
 }
 
+.menu-color-home {
+  background-color: var(--saddle);
+}
+
 .bg-color-home {
   background-color: var(--saddle15);
 }
 
 .color-projects {
   color: var(--night) !important;
+}
+
+.menu-color-projects {
+  background-color: var(--night);
 }
 
 .bg-color-projects {
@@ -259,12 +267,20 @@ a {
   color: var(--cognac) !important;
 }
 
+.menu-color-about {
+  background-color: var(--cognac);
+}
+
 .bg-color-about {
   background-color: var(--cognac15);
 }
 
 .color-contact {
   color: var(--forest) !important;
+}
+
+.menu-color-contact {
+  background-color: var(--forest);
 }
 
 .bg-color-contact {

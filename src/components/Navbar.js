@@ -25,11 +25,13 @@ const useWindowSize = () => {
   return windowSize;
 };
 
-function Navbar({ currentPage, handlePageChange, pageColor, pageBGColor, pageLogoMark, pageLogoType }) {
-  function clickNavEvent (page)  {
+function Navbar({ currentPage, handlePageChange, pageColor, pageBGColor, pageLogoMark, pageLogoType, pageMenuColor }) {
+  function clickNavEvent(page)  {
     handlePageChange(page)
     var checkbox = document.querySelector('.check');
-    checkbox.checked = false;
+    if (checkbox) {
+      checkbox.checked = false;
+    }
   }
 
 const { width } = useWindowSize();
@@ -44,15 +46,15 @@ const { width } = useWindowSize();
         </div>
       </Link>
       <label className="hamburger">
-        <input className="check" type='checkbox' />
+        <input className={`check ${pageMenuColor}`} type='checkbox' />
       </label>
-      <div className="navlist">
+      <div className={`navlist ${pageBGColor}`}>
       <menu className="text-center">
         <li className="navitem">
           <Link
             to="/"
             onClick={() => clickNavEvent('Home')}
-            className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
+            className={`nav-link ${pageColor}`}
           >
             Home
           </Link>
@@ -62,7 +64,8 @@ const { width } = useWindowSize();
           <Link
             to="projects"
             onClick={() => clickNavEvent('Projects')}
-            className={currentPage === 'Projects' ? 'nav-link active' : 'nav-link'}
+            className={`nav-link ${pageColor}`}
+            // className={currentPage === 'Projects' ? 'nav-link active' : 'nav-link'}
           >
             Projects
           </Link></li>
@@ -70,14 +73,14 @@ const { width } = useWindowSize();
           <Link
             to="about"
             onClick={() => clickNavEvent('About')}
-            className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
+            className={`nav-link ${pageColor}`}
           >About
           </Link></li>
         <li className="navitem">
           <Link
             to="contact"
             onClick={() => clickNavEvent('Contact')}
-            className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
+            className={`nav-link ${pageColor}`}
           >Contact
           </Link></li>
       </menu>

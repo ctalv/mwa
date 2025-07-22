@@ -19,6 +19,28 @@ function Projects() {
 
 
     return (
+        <>
+        <style>
+            {`
+            .hamburger:has(input:checked) {
+                --foreground: var(--night15);
+                --background: var(--night);
+            }
+
+            .hamburger:has(input:focus-visible)::before,
+            .hamburger:has(input:focus-visible)::after,
+            .hamburger input:focus-visible {
+                border: 1px solid var(--night);
+                box-shadow: 0 0 0 1px var(--night15);
+            }
+
+            .hamburger::before,
+            .hamburger::after,
+            .hamburger input {
+                background-color: var(--night);
+            }
+            `}
+        </style>
         <main>
             <div className="projects color-projects">
                 <h2 className="text-center header">GALLERY</h2>
@@ -64,6 +86,7 @@ function Projects() {
                 </div>
             </div>
         </main>
+        </>
     );
 }
 

@@ -14,6 +14,7 @@ function Container({ children }) {
     const location = useLocation();
       const [pageColor, setpageColor] = useState('');
       const [pageBGColor, setpageBGColor] = useState('');
+      const [pageMenuColor, setpageMenuColor] = useState('');
       const [pageLogoMark, setpageLogoMark] = useState('');
       const [pageLogoType, setpageLogoType] = useState('');
     
@@ -22,30 +23,35 @@ function Container({ children }) {
           case '/':
             setpageColor('color-home');
             setpageBGColor('bg-color-home');
+            setpageMenuColor('menu-color-home');
             setpageLogoMark(logomarkHome);
             setpageLogoType(logotypeHome);
             break;
           case '/projects':
             setpageColor('color-projects');
             setpageBGColor('bg-color-projects');
+            setpageMenuColor('menu-color-projects');
             setpageLogoMark(logomarkProjects);
             setpageLogoType(logotypeProjects);        
             break;
           case '/about':
             setpageColor('color-about');
             setpageBGColor('bg-color-about');
+            setpageMenuColor('menu-color-about');
             setpageLogoMark(logomarkAbout);
             setpageLogoType(logotypeAbout);        
             break;
           case '/contact':
             setpageColor('color-contact');
             setpageBGColor('bg-color-contact');
+            setpageMenuColor('menu-color-contact');
             setpageLogoMark(logomarkContact);
             setpageLogoType(logotypeContact);        
             break;
           default:
             setpageColor('color-home');
             setpageBGColor('bg-color-home');
+            setpageMenuColor('menu-color-home');
             setpageLogoMark(logomarkHome);
             setpageLogoType(logotypeHome);        
         }
@@ -53,7 +59,7 @@ function Container({ children }) {
 
     return (
         <div>
-        {children(pageColor, pageBGColor,pageLogoMark, pageLogoType)}
+        {children(pageColor, pageBGColor, pageMenuColor, pageLogoMark, pageLogoType)}
     </div>
 
     )
