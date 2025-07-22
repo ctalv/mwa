@@ -124,13 +124,15 @@ nav {
 .hamburger:has(input:checked)::before {
     rotate: 45deg;
     width: var(--x-width);
-    translate: 0 calc(var(--bar-height) / -2);
+    translate: 0 15px;
+    /* translate: 0 calc(var(--bar-height) / -2); */
 }
 
 .hamburger:has(input:checked)::after {
     rotate: -45deg;
     width: var(--x-width);
-    translate: 0 calc(var(--bar-height) / 2);
+    translate: 0 -15px;
+    /* translate: 0 calc(var(--bar-height) / 2); */
 }
 
 .hamburger input:checked {
