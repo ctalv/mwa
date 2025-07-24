@@ -239,6 +239,26 @@ a {
 }
 
 
+.contain {
+    width: calc(100vw*0.8);
+    margin: auto;
+}
+
+@media (max-width: 575.98px) {
+  .contain {
+    width: calc(100vw*0.95);
+    margin: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contain {
+    width: 1200px;
+    margin: auto;
+  }
+}
+
+
 .color-home {
   color: var(--saddle) !important;
 }
