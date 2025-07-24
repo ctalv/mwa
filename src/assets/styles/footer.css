@@ -8,29 +8,17 @@ footer {
   position:relative;
 }
 
-.footerleft {
-  /* flex: 1;  */
-  display: inline;
-  padding: 0 .75rem;
+.iframe-container {
+  display: inline-block;
   margin-left: 20px;
-  
+  padding: 0 .75rem;
+
 }
 
-/* .footerlogodiv {
-    width: auto;
-  } */
+.mininav {
+  display: inline-block;
 
-  .iframe-container {
-    display: inline-block;
-    margin-left: 20px;
-    padding: 0 .75rem;
-
-  }
-
-  .mininav {
-    display: inline-block;
-
-  }
+}
 
 
 
