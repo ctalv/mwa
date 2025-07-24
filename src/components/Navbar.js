@@ -36,7 +36,7 @@ function Navbar({ currentPage, handlePageChange, pageColor, pageBGColor, pageLog
 
 const { width } = useWindowSize();
 
-  if (width < 850) {
+  if (width < 1030) {
     return (
     <nav className={`nav ${pageBGColor}`}>
       <Link className="navlogo" to="/">
@@ -89,7 +89,7 @@ const { width } = useWindowSize();
   } else {
     return (
     <nav className={`nav ${pageBGColor}`}>
-      <menu className="d-flex justify-content-around">
+      <menu className="contain d-flex justify-content-between">
           <li className="navitem">
             <Link
               to="/"
