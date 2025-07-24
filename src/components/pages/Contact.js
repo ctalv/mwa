@@ -32,7 +32,7 @@ function Contact() {
             `}
         </style>
         <main>
-            <div className="contact-us-page container color-contact">
+            <div className="contact-us-page contain color-contact">
                 <div className="row">
                     {/* <div className="col-4">
                         <img className="contact-us-img" src={contactImage}
