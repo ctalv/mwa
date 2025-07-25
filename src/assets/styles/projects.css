@@ -5,13 +5,22 @@
 
 .project {
     position: relative;
+    transition: 0.4s;
 }
+
+.project:hover {
+    /* CSS declarations for hover state */
+    /* visibility:hidden; */
+    transform: scale(1.1);
+}
+
 
 .project-photo {
     width: 100%;
     height: 300px;
     object-fit: cover;
 }
+
 
 
 .project-title {
