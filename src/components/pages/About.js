@@ -21,7 +21,7 @@ function About() {
             )
         } else {
             return (
-                    <div className="associate col-12 col-sm-6 col-lg-3 profile">
+                    <div className="associate col-12 col-sm-6 col-lg-4 profile">
                         <img className="headshot" src={person.headshot} alt="headshot" />
                         <div className="titles bg-color-about color-about">
                             <h3 className="person-name">{person.name}</h3>

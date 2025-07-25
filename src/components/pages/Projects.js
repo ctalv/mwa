@@ -45,7 +45,7 @@ function Projects() {
             <div className="projects color-projects">
                 <h2 className="text-center header">GALLERY</h2>
 
-                <div className="container">
+                <div className="contain">
                     <div className="gallery text-center">
                         <div className="d-flex justify-content-center">
                             <div className="tags d-flex flex-wrap justify-content-center">
