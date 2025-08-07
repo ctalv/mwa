@@ -9,8 +9,30 @@ function Contact() {
 
 
     return (
+        <>
+        <style>
+            {`
+            .hamburger:has(input:checked) {
+                --foreground: var(--forest15);
+                --background: var(--forest);
+            }
+
+            .hamburger:has(input:focus-visible)::before,
+            .hamburger:has(input:focus-visible)::after,
+            .hamburger input:focus-visible {
+                border: 1px solid var(--forest);
+                box-shadow: 0 0 0 1px var(--forest15);
+            }
+
+            .hamburger::before,
+            .hamburger::after,
+            .hamburger input {
+                background-color: var(--forest);
+            }
+            `}
+        </style>
         <main>
-            <div className="contact-us-page container color-contact">
+            <div className="contact-us-page contain color-contact">
                 <div className="row">
                     {/* <div className="col-4">
                         <img className="contact-us-img" src={contactImage}
@@ -44,6 +66,7 @@ function Contact() {
                 </div>
             </div>
         </main>
+        </>
     );
 }
 

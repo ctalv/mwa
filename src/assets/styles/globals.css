@@ -117,12 +117,15 @@ body {
   --forest35: #B6B5AF;
   --forest15: #E0DFDD;
 
-  --bar-width: 60px;
-  --bar-height: 8px;
-  --hamburger-gap: 6px;
+  --bar-width: 50px;
+  --bar-height: 5px; 
+  --hamburger-gap: 10px;
   --hamburger-margin: 8px;
   --animation-timing: 200ms ease-in-out;
   --hamburger-height: calc((var(--bar-height) *3 + var(--hamburger-gap) *4));
+
+  --margin-header: 25px;
+  --bs-column-padding: calc(var(--bs-gutter-x) * .5);
 }
 
 html,
@@ -188,10 +191,11 @@ a {
 
 
 .header {
-  margin: 25px;
+  margin: var(--margin-header);
   font-size: 28px;
   text-align: center;
 }
+
 
 
 /* Extra small devices (phones) */
@@ -235,8 +239,32 @@ a {
 }
 
 
+.contain {
+    width: calc(100vw*0.8);
+    margin: auto;
+}
+
+@media (max-width: 575.98px) {
+  .contain {
+    width: calc(100vw*0.95);
+    margin: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contain {
+    width: 1200px;
+    margin: auto;
+  }
+}
+
+
 .color-home {
   color: var(--saddle) !important;
+}
+
+.menu-color-home {
+  background-color: var(--saddle);
 }
 
 .bg-color-home {
@@ -247,6 +275,10 @@ a {
   color: var(--night) !important;
 }
 
+.menu-color-projects {
+  background-color: var(--night);
+}
+
 .bg-color-projects {
   background-color: var(--night15);
 }
@@ -255,12 +287,20 @@ a {
   color: var(--cognac) !important;
 }
 
+.menu-color-about {
+  background-color: var(--cognac);
+}
+
 .bg-color-about {
   background-color: var(--cognac15);
 }
 
 .color-contact {
   color: var(--forest) !important;
+}
+
+.menu-color-contact {
+  background-color: var(--forest);
 }
 
 .bg-color-contact {
