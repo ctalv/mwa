@@ -1,51 +1,70 @@
-nav {
-    display: block !important;
-    text-align: center;
-} 
 
 menu {
-vertical-align: bottom;
-
-}
-
-.navbar {
-    display: flex;
-    top: 0;
-    position: sticky;
-    /* align-items: center; */
-    width: 100%;
-    margin: auto;
+    vertical-align: bottom;
 }
 
 nav {
-    display: flex;
-    /* justify-content: space-between; */
     align-items: center;
-    padding: 10px;
-    /* position: relative; */
-
+    /* justify-content: center; */
+    padding: 10px !important;
+    text-align: center;
     z-index: 2;
     font-family: 'Times New Roman', Times, serif;
 }
 
-/* Centering the navlogo */
-.navlogo {
+.navbar {
+    top: 0;
+    width: 100%;
+    margin: auto;
+}
+
+.navlogo, .navlogomark, .navlogotype {
     margin: 0 auto;
+}
+
+.navlogo, .navlogotype {
     max-width: 300px;
-    /* Adjust the size of the logo */
 }
 
 .navlogomark {
-    margin: 0 auto;
     max-width: 50px;
     padding-bottom: 10px;
-    /* Adjust the size of the logo */
 }
 
-.navlogotype {
-    margin: 0 auto;
-    max-width: 300px;
-    /* Adjust the size of the logo */
+
+@media only screen and (max-width: 850px) {
+    .navlogo,.navlogo, .navlogotype {
+        max-width: 200px;
+    }
+
+    .navlogomark {
+        max-width: 30px;
+        padding-bottom: 7px;
+    }
+}
+
+.navlist {
+    transition: translate var(--animation-timing);
+    translate: 0 -100%;
+    position: absolute;
+    display: grid;
+    align-items: center;
+    min-width: 100vw;
+    width: 100%;
+    min-height: 100vh;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+
+}
+
+.navitem {
+    font-size: 25px;
+    list-style: none;
+}
+
+.padding-nav {
+    padding-top: 57px !important;  
 }
 
 
@@ -68,17 +87,6 @@ nav {
 
 }
 
-.navitem {
-    font-size: 25px;
-    list-style: none;
-}
-
-
-.padding-nav {
-    padding-top: 57px !important;  
-
-}
-/* 
 .hamburger:has(input:checked) {
     --foreground: var(--saddle15);
     --background: var(--saddle);
@@ -99,7 +107,7 @@ nav {
     height: var(--bar-height);
     background-color: var(--saddle);
     border-radius: 9999px;
-    transform-origin: left center;
+    transform-origin: left censaddleter;
     transition: opacity var(--animation-timing), width var(--animation-timing),
         rotate var(--animation-timing), translate var(--animation-timing),
         background-color var(--animation-timing);
@@ -116,13 +124,15 @@ nav {
 .hamburger:has(input:checked)::before {
     rotate: 45deg;
     width: var(--x-width);
-    translate: 0 calc(var(--bar-height) / -2);
+    translate: 0 15px;
+    /* translate: 0 calc(var(--bar-height) / -2); */
 }
 
 .hamburger:has(input:checked)::after {
     rotate: -45deg;
     width: var(--x-width);
-    translate: 0 calc(var(--bar-height) / 2);
+    translate: 0 -15px;
+    /* translate: 0 calc(var(--bar-height) / 2); */
 }
 
 .hamburger input:checked {
@@ -130,24 +140,9 @@ nav {
     width: 0;
 }
 
-.navlist {
-    transition: translate var(--animation-timing);
-    translate: 0 -100%;
-    position: absolute;
 
-    display: grid;
-    align-items: center;
-    background-color: var(--saddle15);
-    color: var(--saddle);
-    min-width: 100vw;
-    width: 100%;
-    min-height: 100vh;
-    top: 0px;
-    left: 0px;
-
-}
 
 .hamburger:has(input:checked)+.navlist {
     translate: 0 0;
 }
- */
+

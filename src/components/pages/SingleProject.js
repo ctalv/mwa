@@ -34,8 +34,8 @@ function topFunction() {
             <div className="projects contain">
                 <h2 className="text-center header">{project.project}</h2>
                 <p className="text-center">{project.description}</p>
-                <div className="">
-                    <div className="gallery text-center">
+                <div className="contain">
+                    <div className="gallery text-center w-100">
                         {images.map(item => (
                             <div className="project">
                                 <img className="project-image" src={item.image} alt={item.alt} />
