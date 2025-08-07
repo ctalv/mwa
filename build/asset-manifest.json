@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mwa/build/static/css/main.f571f539.css",
-    "main.js": "/mwa/build/static/js/main.667481a4.js",
+    "main.css": "/mwa/build/static/css/main.09ab2e94.css",
+    "main.js": "/mwa/build/static/js/main.fbb244ee.js",
     "static/js/453.1f35141a.chunk.js": "/mwa/build/static/js/453.1f35141a.chunk.js",
     "static/media/Michael Hunter 2-23.JPG": "/mwa/build/static/media/Michael Hunter 2-23.b4bb669957a90f96a6c3.JPG",
     "static/media/Michael Hunter -2-2.JPG": "/mwa/build/static/media/Michael Hunter -2-2.7c93d68c5267b83bbbae.JPG",
@@ -210,12 +210,12 @@
     "static/media/revicons.ttf": "/mwa/build/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/mwa/build/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/mwa/build/index.html",
-    "main.f571f539.css.map": "/mwa/build/static/css/main.f571f539.css.map",
-    "main.667481a4.js.map": "/mwa/build/static/js/main.667481a4.js.map",
+    "main.09ab2e94.css.map": "/mwa/build/static/css/main.09ab2e94.css.map",
+    "main.fbb244ee.js.map": "/mwa/build/static/js/main.fbb244ee.js.map",
     "453.1f35141a.chunk.js.map": "/mwa/build/static/js/453.1f35141a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f571f539.css",
-    "static/js/main.667481a4.js"
+    "static/css/main.09ab2e94.css",
+    "static/js/main.fbb244ee.js"
   ]
 }
